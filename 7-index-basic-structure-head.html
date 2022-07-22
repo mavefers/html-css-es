@@ -56,9 +56,74 @@
                     Son los espacios que debemos dejar al momento de escribir cada etiqueta para generar una simetría cuando esribimos código, para tener una lectura limpia y una comprensión rápida, y el IDE o Editor de Texto nos pueda ayudar a visualizar las estructuras de cada etiqueta, indicándonos su apertura y cierre.
                     <br/>
                     - Hay etiquetas que tienen apertura y cierre, ejemplo, < body > < / body >, como también hay etiquetas que se autocierran, por ejemplo, < br / >
+                    <br/>
+                    - Como buena práctica, las etiquetas que no tienen etiquetas de cierre, ejemplo, "< meta />", deben llevar un slash/diagonal "/" antes del cierre.
                 </li>
             </ul>
             <p>Una analogía para entender la estructura entre el head y el body, sería como si fuera un cuerpo humano, ya que en head almacenaría todas las conexiones nerviosas que necesita nuestro cuerpo, pero que no son vizuales, y en el body iría todo lo que usamos en el día a día, como nuestras articulaciones, que es claramente visible para el resto de personas.</p>
+        </article>
+        <br/>
+        <article>
+            <div>
+                <p>Dentro de la etiqueta "head" irá todas las etiquetas queson importantes para el navegador para que el proyecto pueda cargar bien.</p>
+                <h3>meta</h3>
+                <p>
+                La etiqueta "< meta />" da cierta informacion al navegador, para que sepa como tratar a nuestro proyecto.
+                <br/>
+            </p>
+            </div>
+            <div>
+                <h4>Tipos de etiquetas "meta":</h4>
+                <ul>
+                    <li>
+                        <b>< meta charset="" /></b>
+                        <br/>
+                        <b>charset=" "</b> llevará un valor <b>"UTF-8"</b>, <b>< meta charset="UTF-8" /></b>, para que el navegador pueda entender una lista específica de caracteres especiales, para poder interpretarlos correctamente. También existe <b>UTF-16</b> y <b>UTF-32</b> que agrupan otro tipo de caracteres, pero estos dos últimos valores que almacenan otras listas, no son muy usados.
+                        <br/>
+                        Con "UTF-8" también <b>puedes agregar emojis</b> directamente al texto de la página, y se renderizarán como emojis.
+                    </li>
+                    <br/>
+                    <li>
+                        <b>< meta name="" />  -  < meta name="description" content="Texto que irá en la descripción de la web, al momento de aparecer en los resultados de búsqueda."/></b>
+                        <br/>
+                        - El atributo <b>name=" "</b> llevará un valor <b>"description"</b>.
+                        <br/>
+                        El manejo del valor "description" es parte del rol del <b>SEO</b>, <b>< meta name="description" /></b>, con esta etiqueta podremos añadir una breve descripción de la página, para que aparezca en el resultado de búsquedas en el Navegador.
+                        <br/>
+                        Contribuirá para que el navegador pueda ayudar a que cuando las personas busquen cierta información, el Navegador pueda relacioniar las palabras con la descripción que colocamos cuando nuestra web sea visible en el resultado de la búsqueda. 
+                        <br/>
+                        - El atributo <b>content=" "</b> será el encargado de almacenar la descripción que queramos que tenga nuestra página web, al momento de aparecer en los resultados de búsqueda del navegador.
+                    </li>
+                    <br/>
+                    <li>
+                        <b>< meta name="keywords" content="Aquí, irán, las, palabras, clave" /></b>
+                        <br/>
+                        Sirve para definir las palabras clave que ayudarán a los motores de búsqueda a mostrar nuestra página web al usuario, de una manera fácil y rápida.
+                    </li>
+                </ul>
+            </div>                
+        </article>
+        <br/>
+        <article>
+            <h3>Imágenes:</h3>
+            <div>
+                <ul>
+                    <li>
+                        <br/>
+                        <img src="https://static.platzi.com/media/user_upload/IMG_2482-8ed7b477-9bdc-44e5-951e-b76fcd8449c1.jpg" alt="">
+                    </li>
+                    <br/>
+                    <li>
+                        <br/>
+                        <img src="https://static.platzi.com/media/user_upload/IMG_2483-b30a2a81-cc35-4117-9fd3-4808624f97b5.jpg" alt="">
+                    </li>
+                    <br/>
+                    <li>
+                        <br/>
+                        <img src="https://static.platzi.com/media/user_upload/html-13c81740-4f89-4aeb-8e1b-1c5df3188df4.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
         </article>
     </section>
 </body>
