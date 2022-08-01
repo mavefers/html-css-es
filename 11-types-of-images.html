@@ -19,20 +19,130 @@
                     <h4>Existen dos tipos de clasificación para las imágnes: Lossy y Lossless</h4>
                     <dl>
                         <dt>Imágenes <b>Lossy</b>:</dt>
-                        <dd>Son imágenes <b>con pérdida</b>.</dd>
+                        <dd>
+                            Son imágenes <b>con opción de pérdida</b>. Sí tienen opción de hacerlas más ligeras.
+                            <br/>
+                            En este formato mejoraremos el tamaño de la imagen, reduciéndolo, para así también reducir el tiempo de carga de nuestros proyectos, en los navegadores.
+                            <br/>
+                            Si hay imágenes menos pesadas, eso significa que han perdido algo de calidad, pero eso nos ayuda a cargar nuestro proyecto más rápido, en el navegador.
+                            <br/>
+                            - Los formatos de imagen con pérdida se aproximan a su imagen original. Por ejemplo, una imagen con pérdida podría reducir la cantidad de colores en su imagen, o analizar la imagen en busca de datos (metadatos) innecesarios; esto reduciría el tamaño del archivo, aunque también pueden reducir la calidad de su imagen.
+                        </dd>
                     </dl>
                     <dl>
                         <dt>Imágenes <b>Lossless</b>:</dt>
-                        <dd>Son imágenes <b>sin pérdida</b>.</dd>
+                        <dd>
+                            Son imágenes <b>sin opción de pérdida</b>. No tienen opción de hacerlas más ligeras.
+                            <br/>
+                            Quiere decir que <b>el formato</b> en sí, de la imagen, <b>no nos va a hacer perder la calidad de la misma</b>. Lo negativo de estas imágenes, es que suelen ser pesadas, porque no estamos perdiendo calidad.
+                            <br/>
+                            El archivo puede estar comprimido, pero todos los formatos sin pérdida, Lossless, podrán reconstruir su imagen a su estado original.
+                        </dd>
                     </dl>
-                    <p>Es muy importante tener en claro esto, porque al momento de construir una página web, vamos a utilizar muchas imágenes.<br/>Y si usamos imágenes muy pesadas, muy grandes, que vienen a ser las imágenes sin pérdidas; nuestras páginas van a tomar más tiempo en cargar por completo, y le daremos una muy mala experiencia a los usuarios.<br/>De igual forma, cuando se esté comunicando con el diseñador, se le tiene que pedir un formato ideal, de acuerdo a lo que nosotros hemos analizado y hemos concretado que que son ideales para nuestra página web, en este caso deberíamos indicarles el tipo de formato, sus métricas, el peso ideal, entre otros aspectos más.</p>
+                    <p>Es muy importante tener en claro esto, porque al momento de construir una página web, vamos a utilizar muchas imágenes.
+                        <br/>
+                        Y si usamos imágenes muy pesadas, muy grandes, que vienen a ser las imágenes sin pérdidas; nuestras páginas van a tomar más tiempo en cargar por completo, y le daremos una muy mala experiencia a los usuarios.
+                        <br/>
+                        De igual forma, cuando se esté comunicando con el diseñador, se le tiene que pedir un formato ideal, de acuerdo a lo que nosotros hemos analizado y hemos concretado que que son ideales para nuestra página web, en este caso deberíamos indicarles el tipo de formato, sus métricas, el peso ideal, entre otros aspectos más.
+                    </p>
+                    <p>Se pueden optimizar las imágenes grandes, pero se necesita saber el tipo de imágenes que son, Lossy o Lossless.</p>
+                    <p>
+                        Las imágenes que tienen pérdida, son mucho más pequeñas, en lo general, comparándolas con las imágenes que no tienen pérdida, y esto es ideal para cargar más rápido nuestro proyecto.
+                        <br/>
+                        Si tenemos que escoger, en imágenes, cualquier tipo de formato para poder cargarlas a nuestro proyecto, siempre deberíamos escoger imágenes que tienen opción de pérdida, Lossy, quiere decir que van a ser imágenes mucho más ligeras, que una imagen grande que no pierde calidad.
+                    </p>
                 </div>
                 <div>
                     <p>Formatos de imágenes:</p>
                     <ul>
-                        <li>PNG</li>
-                        <li>JPG</li>
-                        <li>GIF</li>
+                        <li>PNG - Lossless</li>
+                        <li>JPG/JPEG - Lossy</li>
+                        <li>GIF - Lossless</li>
+                        <li>SVG - Vector/Lossless</li>
+                    </ul>
+                    <dl>
+                        <dt>PNG-8 (Lossless):</dt>
+                        <dd>Es un formato de imagen que <b>tiene un máximo de</b> uso, de <b>256 colores</b>. Esa es su máxima paleta de colores, porque está construído sobre 8 bits.</dd>
+                        <br/>
+                        <dt>PNG-24 (Lossless):</dt>
+                        <dd>La diferencia con PNG-8, es que <b>PNG-24 alcanza</b> a comprimir <b>un máximo de 16 millones de colores</b>, una variedad de colores casi ilimitada, debido a que está construído sobre 24 bits, y también, PNG-24 es mucho más pesado que PNG-8.
+                            <br/>
+                            Funciona para el uso de fotografías pesadas, de alta calidad, donde se tenga que manipular el fondo.</dd>
+                    </dl>
+                    <p>
+                        -Usamos PNG para hacer logotipos o íconos que necesiten usar transparentes.
+                        <br/>
+                        -Cuando la empresa, o el diseñador nos pasen los logotipos, debemos pedirles que nos los pase en PNG, para usar el logotipo sin ningún tipo de problema.
+                        <br/>
+                        - Los PNG nos ayudan a tener los fondos transparentes. Todo PNG es Lossless
+                    </p>
+                    <dl> 
+                        <dt>JPG/JPEG (Lossy):</dt>
+                        <dd>
+                            En este formato tendremos la opción de pérdida. Es ideal para fotografía, no íconos o logotipos, ya que en su paleta de colores <b>admite un máximo de 16 millones de colores</b>, casi ilimitada.
+                            <br/>
+                            Sus siglas significan "Joint Photographic Experts Group", que al español se traduce como, "Grupo de Expertos Fotográficos Unidos".
+                            <br/>
+                            Este tipo de imágenes suelen ser muy grandes, y al momento de perder calidad se notará un poco pixeleada, pero ya se notará una gran diferencia en la pérdida de peso, y esto nos favorece en la web, ya que necesitamos imágenes que pesen muy poco para que se rendericen muy rápido.
+                        </dd>
+                    </dl>
+                    </p>
+                    <p>-Cuando necesitemos utilizar una imágen de fotografía, debemos solicitar que nos envíen la imagen en el formato JPG o JPEG, para comprimirla a un tamaño ideal, y así sea más ligera</p>
+                    <dl>
+                        <dt>SVG (Vector / Lossless):</dt>
+                        <dd>
+                            Es un formato muy ligero que nos permite realizar íconos o logotipos que estén hechos para escalar. Esto quiere decir que cuando lleguen a estirarse, la imagen reprograma sus pixeles de manera automática gracias a su algoritmo matemático con el que está programado; sirve para cuando la imagen sea presentada en una pantalla retina, las cuales multiplican los pixeles de la pantalla, las imágenes crecen y normalmente pierden calidad, ahí es donde son útiles las imágenes con formato Vector, ya que son escalables y no hacen perder su calidad de imagen por ningún motivo.
+                            <br/>
+                            La imagen crece, sin perder calidad, por eso es Lossless. Usualmente, cuando estiramos una imagen, estas tienden a perder su calidad de imagen.
+                            <br/>
+                            Sirve para que cuando trabajemos con diferentes tipos de pantallas y utilicemos logos y logotipos, la imagen no se distorcione o pierda calidad, ya que la imagen en formato Vector siempre se amoldará a cualquier tipo de pantalla, ya que hay pantallas que estiran las imágenes y las hacen perder de calidad.
+                            <br/>
+                            Su nombre son siglas que significa "Scale Vector Graphics".
+                        </dd>
+                    </dl>
+                </div>
+                <div>
+                    <h3>Notas:</h3>
+                    <p>2 páginas muy útiles para conseguir imágenes de muy buena calidad, en diferentes formatos: <a href="https://platzi.com/comentario/1683681/" target="_blank">[fuente]</a></p>
+                    <dl>
+                        <dt>Para Iconos: <a href="https://www.flaticon.com/" target="_blank">FlatIcon</a></dt>
+                        <dd>Encontrarán miles de iconos de muy buena calidad y de lo que sea que busquen, siendo estos, gratuitos de uso. Además de que se pueden descargar en png, con diferentes resoluciones, o directamente en svg. También puedes editar los iconos directamente.</dd>
+                        <br/>
+                        <dt>Para imágenes: <a href="https://www.freepik.es/" target="_blank">Freepik</a></dt>
+                        <dd>Aquí hay, tanto iconos, como ilustraciones completas, de mucha calidad, que se pueden descargar en PNG o PSD. Igualmente son de uso libre.</dd>
+                    </dl>
+                </div>
+                <div>
+                    <h3>Links:</h3>
+                    <ul>
+                        <li><a href="https://postimages.org/es/" target="_blank">Postimages</a> - Almacenamiento gratuito de imágenes, ideal para usarlos en nuestro proyectos y en nuestros repositorios; es mucho mejor que "imgur".</li>
+                        <li><a href="https://undraw.co/illustrations" target="_blank">undraw</a> - Ilustraciones en SVG</li>
+                        <li><a href="https://svgedit.netlify.app/editor/index.html" target="_blank">SGV Edit</a> - Editor SVG para navegador</li>
+                        <li><a href="https://remixicon.com/">Remix Icon</a> - Biblioteca de iconos de código abierto</li>
+                        <li><a href="https://boxicons.com/" target="_blank">Boxicons</a> - Biblioteca premium de iconos de código abierto</li>
+                        <li><a href="https://platzi.com/comentario/1695683/" target="_blank">GitHub y .gitignore</a> - Para que las imágenes no se suban a GitHub debe crearse un archivo .gitignore que contenga el tipo de archivo que no quieran ser subidos al repo remoto. por ejemplo *.jpg o también *.png , etc. Fuente: <a href="https://platzi.com/clases/1557-git-github/19960-ignorar-archivos-en-el-repositorio-con-gitignore/" target="_blank">ExplicaciónDeFredy(Git&GitHub-Clase31) : minuto 4:44</a>.</li>
+                        <li><a href="https://unsplash.com/" target="_blank">Unsplash</a> - Banco de imágenes</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Imágenes:</h3>
+                    <ul>
+                        <li>
+                            <br/>
+                            <img src="https://static.platzi.com/media/user_upload/table%20for%20diferent%20images-42fdf349-a492-4ff5-afbd-1f437c804e4a.jpg" alt="resumen, tabla de diferencias" width="400"/>
+                        </li>
+                        <li>
+                            <br/>
+                            <img src="https://static.platzi.com/media/user_upload/JPG%20vs%20PNG%20vs%20GIF%20%23infografia%20%23infographic%20%23design%20-%20TICs%20y%20Formaci%C3%B3n-cd07db93-804e-46f6-927c-3c48a581114e.jpg" alt="Modo de uso de JPG, GIF y PNG." width="400">
+                        </li>
+                        <li>
+                            <br/>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bitmap_VS_SVG.svg/300px-Bitmap_VS_SVG.svg.png" alt="comparación con VSG">
+                        </li>
+                        <li>
+                            <br>
+                            <img src="https://static.platzi.com/media/user_upload/Azul%20Personalidad%20de%20Emprendedores%20Negocio%20Infograf%C3%ADa-b3f162d1-ba66-4bb9-834c-88798b45dd7b.jpg" alt="resumen" width="400"/>
+                        </li>
                     </ul>
                 </div>
             </article>    
