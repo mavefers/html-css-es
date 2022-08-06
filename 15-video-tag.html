@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Este es un video!</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <div>
+                    <h3>Etiqueta < video > < / video ></h3>
+                    <p>La etiqueta <b>< video > < / video ></b> es una etiqueta con apertura (<b>< video ></b>) y cierre (<b>< / video ></b>), sirve para mostrar uno o varios videos.
+                        <br/>
+                        Tiene varios atributos, algunos son:
+                    </p>
+                    <dl>
+                        <dt><b>src=" "</b></dt>
+                        <dd>
+                            "Source", sirve para indicar el lugar o ruta del video que queremos mostrar, dentro del apartado del valor.
+                            <br/>
+                            - Este atributo tiene una "extensión" que sirve para regular el inicio y el final del tiempo que queremos que se reproduzca el vídeo, el cual es <b>#t=1,2</b>
+                        </dd>
+                        <dt><b>#t=1,2</b></dt>
+                        <dd>Es un valor/extesión del atributo <b><i>src=" "</i></b>. Va después de haber colocado la ruta como valor, ejemplo "./short.mp4<b><i>#t=1,2</i></b>", el primer número digitado es el tiempo donde iniciará el vídeo, y el segundo número digitado es el tiempo donde finalizará el vídeo; ambos tiempos son <b><i>segundos</i></b>.</dd>
+                        <br/>
+                        <dt><b>controls</b></dt>
+                        <dd>Es un atributo sin "valor", sirve para mostrar los botones en el video. Sin este atributo, los botones de control no serían mostrados.</dd>
+                        <br>
+                        <dt><b>preload="auto"</b></dt>
+                        <dd>
+                            Es un atributo que sirve para renderizar el vídeo cuando la página se empieza a crear en el navegador, esto sirve para que no haya mucho tiempo de espera cuando se empiece a reproducir un vídeo, ya que el vídeo se cargó desde antes.
+                            <br/>
+                            No realiza una reproducción automática, solo carga la rederización previa, junto con los demás archivos de la website, sin tener que comenzar a reproducirlo.
+                        </dd>
+                    </dl>
+                    <video src="./video/short.mp4#t=1,2" controls width="300" preload="auto"></video>
+                    <br/>
+                    <q>La etiqueta < video > < / video > tiene apertura y cierre, por ende, puede almacenar cierto contenido, a diferencia de la etiqueta < img />, que es de cierre automático.</q>
+                </div>
+                <br/>
+                <div>
+                    <h3>Etiqueta < source /></h3>
+                    <p>Cada navegador admite ciertos formatos de vídeo, no todos los navegadores admiten los mismos formatos. La etiqueta <i>< source /></i> nos sirve para agregar varias fuentes de vídeo dentro de la etiqueta de <i>< video > < / video ></i> , esto nos ayuda a colocar el mismo vídeo con diferentes formatos, en caso el navegador no admita el único formato de vídeo que vayamos a subir.</p>
+                    <p>
+                        La sintaxis consiste en solo quitar el atributo <i>src=" "</i> de la etiqueta de video <i>< video > < video / ></i>, y colocarlo dentro de la etiqueta <i>< source / ></i>, como atributo.
+                        <br/>
+                        <b>< source src="./video/short.mp4#t=1,2" /></b>
+                    </p>
+                    <figure>
+                        <img src="./images/code_video.jpg" alt="code">
+                        <figcaption>Bloque de código <i>< video ></i>. <b>Solo muestra el vídeo de la primera fuente que mostró el vídeo exitosamente</b>, el resto de videos no se ejecutan.</figcaption>
+                    </figure>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
+<video width="250" controls preload="auto">
+    <source src="./video/short.m4v"/>
+    <source src="./video/short.mov"/>
+    <source src="./video/short.mp4"/>
+    <source src="./video/short.flv"/>
+</video>
