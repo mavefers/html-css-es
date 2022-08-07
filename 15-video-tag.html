@@ -20,7 +20,7 @@
                         Tiene varios atributos, algunos son:
                     </p>
                     <dl>
-                        <dt><b>src=" "</b></dt>
+                        <dt><b>src="URL"</b></dt>
                         <dd>
                             "Source", sirve para indicar el lugar o ruta del video que queremos mostrar, dentro del apartado del valor.
                             <br/>
@@ -38,6 +38,21 @@
                             <br/>
                             No realiza una reproducción automática, solo carga la rederización previa, junto con los demás archivos de la website, sin tener que comenzar a reproducirlo.
                         </dd>
+                        <br/>
+                        <dt><b>preload="metadata"</b></dt>
+                        <dd>Realiza la carga previa de los metadatos.</dd>
+                        <br>
+                        <dt><b>preload="none"</b></dt>
+                        <dd>No ponen ninguna carga previa.</dd>
+                        <br>
+                        <dt><b>loop</b></dt>
+                        <dd>Reproduce automáticamente el vídeo, de forma continua.</dd>
+                        <br>
+                        <dt><b>muted</b></dt>
+                        <dd>Para que el vídeo empiece sin sonido, silenciado/muteado.</dd>
+                        <br>
+                        <dt><b>poster="URL"</b></dt>
+                        <dd>Sirve para elegir una imagen que será mostrada mientras se carga el vídeo, o hasta que el usuario presione el botón de reproducción. Es como colocar una portada del vídeo.</dd>
                     </dl>
                     <video src="./video/short.mp4#t=1,2" controls width="300" preload="auto"></video>
                     <br/>
@@ -56,15 +71,27 @@
                         <img src="./images/code_video.jpg" alt="code">
                         <figcaption>Bloque de código <i>< video ></i>. <b>Solo muestra el vídeo de la primera fuente que mostró el vídeo exitosamente</b>, el resto de videos no se ejecutan.</figcaption>
                     </figure>
+                    <p>
+                        Adicional a eso, cuando el vídeo está en nuestro servidor, podemos confirmar el tipo de archivo y formato de vídeo que estamos usando.
+                        <dl>
+                            <dt><b>type="video/mp4"</b> (ejemplo)</dt>
+                            <dd>Es un atributo de la etiqueta <i>< source /></i>. Sirve para confirmar el tipo de archivo que estamos utilizando, en este caso es un vídeo, por eso se puso 'video', seguido de el tipo de formato del vídeo, en este caso, 'mp4'. <i>video/mp4</i></dd>
+                            <q><i>< source src="./video/short.mp4" type="video/mp4"/ ></i></q>
+                        </dl>
+                    </p>
+                </div>
+                <br/>
+                <div>
+                    <p>Video final:</p>
+                    <video width="250" controls preload="auto" loop muted poster="./images/images.jpg">
+                        <source src="./video/short.m4v" type="video/m4v"/>
+                        <source src="./video/short.mov" type="video/mov"/>
+                        <source src="./video/short.mp4" type="video/mp4"/>
+                        <source src="./video/short.flv" type="video/flv"/>
+                    </video>
                 </div>
             </article>
         </section>
     </main>
 </body>
 </html>
-<video width="250" controls preload="auto">
-    <source src="./video/short.m4v"/>
-    <source src="./video/short.mov"/>
-    <source src="./video/short.mp4"/>
-    <source src="./video/short.flv"/>
-</video>
