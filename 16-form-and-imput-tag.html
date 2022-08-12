@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form and input</title>
+</head>
+<body>
+    <header>
+        <h1>Etiquetas form e input</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <div>
+                    <h3>Formularios:</h3>
+                    <p>Generar un formulario es una responsabilidad muy importante, ya que es la forma en la que los usuarios se quedan con nosotros, con nuestro producto, o se van.</p>
+                    <q>El mejor formulario es el que no existe.</q>
+                </div>
+                <br/>
+                <div>
+                    <h4>Forma erronea de realizar un formulario</h4>
+                    <figure>
+                        <img src="./images/codex.jpg" alt="Code input">
+                    </figure>
+                    <br/>
+                    <h4>Forma correcta de realizar un formulario:</h4>
+                    <h3>Etiqueta < form action=" " > < / form></h3>
+                    <p>
+                        <q>La caja que almacenará todos los elementos que compongan el formulario.</q>
+                        <br/>
+                        El elemento HTML form (<i>< form ></i>) representa una sección de una página web que contrendrá un <b>formulario</b>, un espacio interactivo entre el usuario y la web, donde se le permitirá al usuario enviar información a un servidor web.
+                    </p>
+                    <p>
+                        Estos son los elementos para realizar un formulario:
+                        <br/>
+                        Se usa la etiqueta < form >, que contrendrá otros elementos, como <i>< label ></i>, <i>< input ></i> y <i>< spam ></i>, etc.</p>
+                    <dl>
+                        <dt><b>label</b> <i>< label for=" "></ label ></i></dt>
+                        <dd>
+                            Sirve para ponerle un título que representa otro elemento de interfaz de usuario. Estos elementos se asocian poniendo el mismo valor en el atributo <i>for=" "</i> y en el valor del atributo <i>id=" "</i>.
+                            <br/>
+                            Aquí se coloca el título o texto de representación del elemento < input /> con el que será enlazado, mediante <i>for=" "</i> y <i>id=" "</i>.
+                        </dd>
+                        
+                        <br/>
+                        <dt><b>input</b> <i>< input type=" " id=" " /></i></dt>
+                        <dd>El input sirve para crear una entrada de datos del usuario.</dd>
+                    </dl>
+                    <p>Para vincular ambos elementos, el valor del atributo <i>for=" "</i> tiene que ser el mismo que el valor del atributo <i>id=" "</i>.</p>
+                    <dl>
+                        <dt>Ejemplo:</dt>
+                        <dd>
+                            <figure>
+                                <img src="./images/code_label_input.jpg" alt="code label and input tag">
+                                <figcaption>label tag and input tag</figcaption>
+                            </figure>
+                        </dd>
+                        <br/>
+                        <dt>Así es como se vería:</dt>
+                        <dd>
+                            <label for="nombre1">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre1"/>
+                            <br/>
+                            <p>Cuando se hace click en el < label >, se activa el < input ></p>
+                        </dd>
+                    </dl>
+                </div>
+                <br/>
+                <p>Existen varios tipos de elemento <i>input</i>.</p>
+                <div>
+                    <h3>Tipos de <i>input</i></h3>
+                    <p></p>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div>
+                    <h3></h3>
+                    <p></p>
+                    <dl>
+                        <dt><b>< input type="button" value="Boton simple" ></b></dt>
+                        <dd>Sirve para realizar botones sin comportamiento específico. - <input type="button" value="Boton simple"></dd>
+                        <br/>
+                        <dt><b>< input type="submit" value="Enviar" ></b></dt>
+                        <dd>Sirve para realizar botones de "Enviar" o "Save". - <input type="submit" value="Enviar"></dd>
+                        <br/>
+                    </dl>
+                </div>
+                <div>
+                    <form action="">
+                        <label for="GET-name">Nombre:</label>
+                        <input id="GET-name" type="text" name="name">
+                        <input type="button" value="action">
+                        <input type="submit" value="Save">
+                      </form>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
