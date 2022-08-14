@@ -20,7 +20,7 @@
                 </div>
                 <br/>
                 <div>
-                    <h4>Forma erronea de realizar un formulario</h4>
+                    <h4>Esta es la forma erronea de realizar un formulario</h4>
                     <figure>
                         <img src="./images/codex.jpg" alt="Code input">
                     </figure>
@@ -41,7 +41,7 @@
                         <dd>
                             Sirve para ponerle un título que representa otro elemento de interfaz de usuario. Estos elementos se asocian poniendo el mismo valor en el atributo <i>for=" "</i> y en el valor del atributo <i>id=" "</i>.
                             <br/>
-                            Aquí se coloca el título o texto de representación del elemento < input /> con el que será enlazado, mediante <i>for=" "</i> y <i>id=" "</i>.
+                            Aquí se coloca el título o texto de representación del elemento < input /> con el que será enlazado, mediante <i>for=" "</i> (< label for=" ">) </label>y <i>id=" "</i> (< input id=" " />).
                         </dd>
                         
                         <br/>
@@ -68,12 +68,60 @@
                     </dl>
                 </div>
                 <br/>
-                <p>Existen varios tipos de elemento <i>input</i>.</p>
                 <div>
-                    <h3>Tipos de <i>input</i></h3>
-                    <p></p>
+                    <h3>Existen varios tipos de elemento <i>< input type=" " /></i>.</h3>
+                    <dl>
+                        <dt>< input type="submit" /></dt>
+                        <dd>
+                            Genera un botón para <b>enviar</b> los datos recaudados del formulario, <b>a</b> un "<b>manejador de formularios</b>".
+                            <br>
+                            El "manejador de formularios" se especifica como valor del atributo <i>action=" "</i> del elemento/etiqueta <i>< form /></i>.
+                            <br>
+                            El "manejador de formularios" suele ser una página de servidor, página externa con un script para procesar los datos de entrada.
+                            <br>
+                            Para editar el texto del botón que viene por defecto, "Enviar" o "Send", se agrega un atributo llamado <i>value=" "</i>, por donde se ingresará la palabra elegida como su valor. Ejemplo: <b>value="Enviar"</b>
+                            <br>
+                            Resultado: <input type="submit" value="botón de ejemplo"/>
+                        </dd>
+                        <br>
+                        <dt>< input type="text" /></dt>
+                        <dd>
+                            Genera un <b>campo de entrada de texto</b> de <b>una sola linea</b>.
+                            <br>
+                            Resultado: <input type="text"/>
+                        </dd>
+                        <br>
+                        <dt></dt>
+                        <dd></dd>
+                    </dl>
                 </div>
 
+
+                <form action="" method="get" class="form-example">
+                    <div class="form-example">
+                      <label for="name">Enter your name: </label>
+                      <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form-example">
+                      <label for="email">Enter your email: </label>
+                      <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-example">
+                      <input type="submit" value="Subscribe!">
+                    </div>
+                    <div class="form-example">
+                      <label for="email">Enter your email: </label>
+                      <input type="email" value="@gmail.com" name="email" id="email" required>
+                    <br>
+                      <label for="name">Enter your name: </label>
+                      <input type="text" name="name" id="name" required>
+                    <br>
+                      <input type="text" name="name" id="x" required>
+                    <br>
+                      <input type="submit" value="Subscribe!">
+                    </div>
+                  </form>
+                  
 
 
 
