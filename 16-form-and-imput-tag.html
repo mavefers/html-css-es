@@ -81,22 +81,50 @@
                             <br>
                             Para editar el texto del botón que viene por defecto, "Enviar" o "Send", se agrega un atributo llamado <i>value=" "</i>, por donde se ingresará la palabra elegida como su valor. Ejemplo: <b>value="Enviar"</b>
                             <br>
-                            Resultado: <input type="submit" value="botón de ejemplo"/>
-                        </dd>
-                        <br>
+                            Resultado: <input type="submit" value="botón de ejemplo"/> <input type="submit" value="Enviar" /> <input type="submit" />
+                        </dd><br/>
                         <dt>< input type="text" /></dt>
                         <dd>
                             Genera un <b>campo de entrada de texto</b> de <b>una sola linea</b>.
                             <br>
                             Resultado: <input type="text"/>
+                        </dd><br/>
+                        <dt>< input type="text" <b>placeholder="texto"</b> /></dt>
+                        <dd>
+                            Atributo que se define como un consejo o indicación corta, que <b>consiste en una sola palabra o en una pequeña frase</b>.<br/>Como por ejemplo, para indicar el formato adecuado de los datos dque se deben introducir.<br/>
+                            Resultado: <input type="text" placeholder="hacer click aquí"/>
+                        </dd><br/>
+                        <dt>< input type="date" /></dt>
+                        <dd>
+                            Sirve para generar un calendario.
+                            <br/>
+                            Se usa para campos de entrada que deben contener una fecha. Dependiendo con la compatibilidad con el navegador, puede aparecer una fecha em el campo.
+                            <br/>
+                            Resultado: <input type="date" />
+                            <br>
+                            También se puede usar atributos <i>min</i> y <i>max</i> para agregar restricciones al momento de elegir las fechas, definiendo como valor <b>"año-mes-día"</b>.
+                            <br/>
+                            Ejemplo: <input type="date" min="2020-03-05" max="2020-03-11" />
+                        </dd><br/>
+                        <dt>< input type="time" /></dt>
+                        <dd>
+                            Genera un <b>campo de entrada para definir tiempo,</b> <i>'hora : minuto'</i> <b>y opcionalmente, <i>segundos</i></b>.<br/>
+                            Resultado: <input type="time"/>
                         </dd>
-                        <br>
-                        <dt></dt>
-                        <dd></dd>
                     </dl>
                 </div>
-
-
+                <div>
+                    <h4>Atributos extras:</h4>
+                    <dl>
+                        <dt><i>id="identificador"</i></dt>
+                        <dd>Como su nombre lo indica, es un identificador de elementos, este atributo se puede usar con <b>cualquier</b> etiqueta, y dos etiquetas <b>NO</b> deberían tener el mismo <i>id</i>, el valor del <i>id="valor"</i> es único para cada etiqueta. El <i>id</i> <b>es útil cuando se está trabajando con CSS o JavaScript</b>, ya que te sirve para seleccionar elementos que serán únicos al momento de trabajar.</dd><br/>
+                        <dt><i>for=" "</i></dt>
+                        <dd>Sirve para indicarle al elemento <i>< label ></i> que va a estar relacionado con el <i>< input /></i> que tenga el mismo valor de su <i>id=" "</i>. Por eso mismo, dos o más elementos no deberían tener el mismo <i>id</i>.<br/><b><i>El atributo for="" solo se utiliza en las etiquetas < label >.</i></b></dd><br/>
+                        <dt><i><b>< p ></b> y <b>< span ></b></i></dt>
+                        <dd>Se usa <i>< p ></i> para textos cortos, medianos o largos (Como una descripción, todo un parrafo, etc.) y si quieres agregar estilos a una palabra o sección en especifico usas <i>< span ></i><br/>Ejemplo: <i>< p > Nunca Pares de Aprender con < span > Platzi < / span > < / p ></i>.</dd>
+                    </dl>
+                </div>
+                
                 <form action="" method="get" class="form-example">
                     <div class="form-example">
                       <label for="name">Enter your name: </label>
