@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario Simple</h1>
+    </header>
+    <main>
+        <h3>Datos para la apertura de tarjeta de crédito:</h3>
+        <form action="db.sql">
+            <div>
+                <label for="name">Nombres:</label>
+                <input type="text" name="name" id="name" required />*
+            </div><br/>
+            <div>
+                <label for="apellido">Apellidos:</label>
+                <input type="text" name="apellido" id="apellido" required />*
+            </div><br/>
+            <div>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" name="correo" id="correo" value="@gmail.com" required />*
+            </div><br/>
+            <p>Elegir fecha de cierre:</p>
+            <div>
+                <label for="fcierre1">1 de cada mes</label>
+                <input type="radio" name="fcierre" id="fcierre1" />
+                <label for="fcierre2">2 de cada mes</label>
+                <input type="radio" name="fcierre" id="fcierre2" />
+                <label for="fcierre3">2 de cada mes</label>
+                <input type="radio" name="fcierre" id="fcierre3" />
+            </div><br/>
+            <div>
+                <input type="submit" value="Enviar"/>
+            </div>
+        </form>
+        <p>Todos los campos que lleven (*) al final, son abligatorios.</p>
+    </main>
+</body>
+</html>
