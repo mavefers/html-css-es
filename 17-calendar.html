@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+    <main>
+        <article>
+            <section>
+                <div>
+                    <form action="db.sql">
+                        <div>
+                            <label for="hora">Hora</label>
+                            <input type="time" name="hora" id="hora" required />
+                        </div>
+                        <div>
+                            <label for="dia">Dia</label>
+                            <input type="date" name="dia" id="dia" required />
+                        </div>
+                        <div>
+                            <label for="semana">Semana</label>
+                            <input type="week" name="Semana" id="semana" required />
+                        </div>
+                        <div>
+                            <label for="mes">Mes</label>
+                            <input type="month" name="mes" id="mes" required />
+                        </div>
+                        <div>
+                            <input type="submit" name="Enviar" id="enviar" />
+                        </div>
+                    </form>
+                    <p>The name function like a reference for management the info.</p>
+                </div>
+                <div>
+                    <form action="">
+                        <div>
+                            <label for="calendario"></label>
+                            <input type="datetime-local" name="calendario" id="calendario">
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section>
+                <h4>Notas:</h4>
+                <dl>
+                    <dt>Para realizar comentarios selectivos</dt>
+                    <dd><b>Shift</b>+<b>Alt</b>+<b>A</b></dd><br/>
+                    <dt>Para realizar comentarios en linea</dt>
+                    <dd><b>Ctrl</b> + <b>/</b></dd><br/>
+                </dl>
+            </section>
+        </article>
+        
+    </main>
+</body>
+</html>
