@@ -13,6 +13,7 @@
     <main>
         <article>
             <section>
+                <h3>Tipos de inputs para armar un calendario (de esta manera tendremos el control total de los datos que vamos a recaudar)</h3>
                 <div>
                     <form action="db.sql">
                         <div>
@@ -35,12 +36,24 @@
                             <input type="submit" name="Enviar" id="enviar" />
                         </div>
                     </form>
-                    <p>The name function like a reference for management the info.</p>
-                </div>
+                    <dl>
+                        <dt>< input <b>type="week"</b> name=" " id=" " ></dt>
+                        <dd>Genera un campo de entrada para seleccionar el <b>número de semana</b> que va en todo el año del que se ha elegido. - <input type="week" name="semana" id="semana"></dd><br/>
+                        <dt>< input <b>type="month"</b> name=" " id=" " ></dt>
+                        <dd>Genera un campo de entrada para <b>seleccionar el mes</b> que está dentro de tal año. - <input type="month" name="mes" id="mes"></dd>
+                    </dl>
+                    <p>The <i>(name=" ")</i> function like a reference for management the info.<br/>El nombre <i>(name=" ")</i> funciona como una referencia para la gestion de la información, se encarga de almacenar todos los datos recaudados, para que luego sean procesados.</p>
+                    <p>El valor del atributo <i>name=" "</i> funcionaría como una variable, y su valor vendrían a ser los datos que los usuarios estarían ingresando.<br/>Esto nos es útil para poder controlar su valor y enviar los datos de cada input, al backend.</p>
+                </div><br/>
                 <div>
+                    <h3>La forma más sencilla y rápida de generar un calendario</h3>
+                    <dl>
+                        <dt>< input <b>type="datetime-local"</b> name=" " id=" " ></dt>
+                        <dd>Permite generar un campo de entrada de fecha y hora, dependiendo del navegador. Al utilizar esta etiqueta, no tendremos control total sobre todos los datos, unitariamente, en comparación a como lo haríamos si realizamos el calendario creando generadores de datos (inputs) de manera independiente. - <input type="datetime-local" name="calendario" id="calendario"></dd>
+                    </dl>
                     <form action="">
                         <div>
-                            <label for="calendario"></label>
+                            <label for="calendario">Calendario</label>
                             <input type="datetime-local" name="calendario" id="calendario">
                         </div>
                     </form>
