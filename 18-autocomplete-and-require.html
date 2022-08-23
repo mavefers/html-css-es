@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Required - Autocomplete</title>
+</head>
+<body>
+    <main>
+        <article>
+            <section>
+                <div>
+                    <h4>Tipos de usos de formularios:</h4>
+                    <p>Sirven para hacer logging, para poder poner información, para que le llegue un producto, para poner una Tarjeta de Crédito o Tarjeta de Débito, para hacer ciertos pagos, etc.<br/>Es importante que el proyecto que estamos creando, sea amigable con el usuario.</p>
+                    <dt>Atributo <i>required</i></dt>
+                    <dd>Evita que el formulario sea enviado sin haberse rellenado los campos donde se colocó el atributo (<i>required</i>), ya que estos campos de entrada serían obligatorios o fundamentales.</dd>
+                </div>
+                <div>
+                    <ul>
+                        <li>Importante que el proyecto que creamos sea amigable con el usuario.</li>
+                        <li>El tipo de dato <i>email</i>, nos ayuda a verificar si lo que se está escribiendo es en realidad un email, ya que verifica dentro de la cadena de texto, si hay un @ y un "." (punto).</li>
+                        <li>Dentro del <i>input</i> vienen los atributos que nos ayuda a retener la información, para ser enviada al backend.</li>
+                        <li>El autocompletado ayuda a mejorar la experiencia del usuario.</li>
+                        <li>El navegador tiene herramientas como los atributos, que hacen más fácil la tarea para nosotros como desarrolladores, y así mismo al usuario.</li>
+                        <li>La mayoría de desarrolladores realizan el trabajo de <i>required</i> desde el lado de JavaScript, pero nostros también podemos crear una primera capa de seguridad desde el formulario.</li>
+                    </ul>
+                </div><br/>
+                <div>
+                    <h3>Revisar las líneas de código del del formulario, en el backend, apretando la siguiente combinación de teclas: Ctrl + Shift + C</h3>
+                    <form action="">
+                        <label for="nombre">¿Cuál es tu nombre?</label>
+                        <input type="text" name="nombre" id="nombre" required autocomplete="name">
+                        <label for="correo">¿Cuál es tu correo?</label>
+                        <input type="email" name="correo" id="correo" required autocomplete="email">
+                        <label for="pais">¿En qué país vives?</label>
+                        <input type="text" name="pais" id="pais" required autocomplete="country-name" >
+                        <label for="zip">¿Cuál es tu código postal?</label>
+                        <input type="text" name="zip" id="zip" required autocomplete="postal-code">
+                        <input type="submit" value="Send">
+                    </form>
+                </div><br/>
+                <div>
+                    <h3>Imágenes:</h3>
+                    <ul>
+                        <li><br/>
+                            <figure>
+                                <img src="./images/autocomplete-required.jpg" alt="" width="900" />
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+        <article>
+            <section>
+                <div>
+                    <h3>Valores de <i>autocomplete:</i></h3>
+                    <p>
+                        <dl>
+                            <dt>- <b>"off"</b></dt>
+                            <dd>El navegador no puede ingresar o seleccionar automáticamente un valor para este campo. Es posible que el documento o la aplicación proporcione su propia función de autocompletar, o que los problemas de seguridad requieran que el valor del campo no se ingrese automáticamente.</dd><br/>
+                            <dt>- <b>"on"</b></dt>
+                            <dd>El navegador puede completar automáticamente la entrada. No se proporciona ninguna orientación sobre el tipo de datos que se esperan en el campo, por lo que el navegador puede usar su propio criterio.</dd><br/>
+                            <dt>- <b>"name"</b></dt>
+                            <dd>
+                                El campo espera que el valor sea el nombre completo de una persona. Generalmente se prefiere usar “nombre” en lugar de dividir el nombre en sus componentes porque evita tratar con la amplia diversidad de nombres humanos y cómo están estructurados; sin embargo, puede usar los siguientes valores de autocompletar si necesita dividir el nombre en sus componentes:
+                                <ol>
+                                    <li><b>"honorific-prefix"</b></li>
+                                    <dd>Prefijo tipo “Mrs.”, “Mr.”, “Miss”, “Ms.”, “Dr.”, or “Mlle.”.</dd>
+                                    <li><b>"given-name"</b></li>
+                                    <dd>Primer nombre (first name)</dd>
+                                    <li><b>"additional-name"</b></li>
+                                    <dd>Segundo nombre (middle name)</dd>
+                                    <li><b>"family-name"</b></li>
+                                    <dd>Apellido (last name)</dd>
+                                    <li><b>"honorific-suffix"</b></li>
+                                    <dd>Sufijo tipo “Jr.”, “B.Sc.”, “PhD.”, “MBASW”, or “IV”.</dd>
+                                    <li><b>"nickname"</b></li>
+                                    <dd>Un apodo.</dd>
+                                </ol>
+                            </dd><br/>
+                            <dt>- <b>"email"</b></dt>
+                            <dd>Dirección de correo electrónico</dd><br/>
+                            <dt>- <b>"username"</b></dt>
+                            <dd>Nombre de usuario</dd><br/>
+                            <dt>- <b>"new-password"</b></dt>
+                            <dd>Una nueva contraseña. Al crear una nueva cuenta o cambiar contraseñas, este es el campo “Ingrese su nueva contraseña”, a diferencia de cualquier campo “Ingrese su contraseña actual” que pueda estar presente. Esto puede ser utilizado por el navegador tanto para evitar ingresar accidentalmente una contraseña existente como para ofrecer ayuda para crear una contraseña segura.</dd><br/>
+                            <dt>- <b>"current-password"</b></dt>
+                            <dd>La contraseña actual del usuario.</dd><br/>
+                            <dt>- <b>"organization-title"</b></dt>
+                            <dd>Un puesto de trabajo, o el título que tiene una persona dentro de una organización, como “Escritor técnico senior”, “Presidente” o “Líder asistente de tropa”.</dd><br/>
+                            <dt>- <b>"organization"</b></dt>
+                            <dd>El nombre de una empresa u organización, como “Acme Widget Company” o “Girl Scouts of America”.</dd><br/>
+                            <dt>- <b>"street-address"</b></dt>
+                            <dd>Una dirección postal. Puede ser varias líneas de texto y debe identificar completamente la ubicación de la dirección dentro de su segundo nivel administrativo (generalmente una ciudad o pueblo), pero no debe incluir el nombre de la ciudad, el código postal o el nombre del país.</dd><br/>
+                            <dt>- <b>"address-line1", "adress-line2", "adress-line3"</b></dt>
+                            <dd>Cada línea individual de la dirección postal. Estos solo deberían estar presentes si la “dirección postal” también está presente.</dd><br/>
+                            <dt>- <b>"address-level4"</b></dt>
+                            <dd>El nivel administrativo más detallado, en direcciones que tienen cuatro niveles.</dd><br/>
+                            <dt>- <b>"address-level3"</b></dt>
+                            <dd>El tercer nivel administrativo, en domicilios con al menos tres niveles administrativos.</dd><br/>
+                            <dt>- <b>"address-level2"</b></dt>
+                            <dd>El segundo nivel administrativo, en domicilios con al menos dos de ellos. En países con dos niveles administrativos, normalmente sería la ciudad, pueblo, aldea u otra localidad en la que se encuentra la dirección.</dd><br/>
+                            <dt>- <b>"address-level1"</b></dt>
+                            <dd>El primer nivel administrativo en la dirección. Esta suele ser la provincia en la que se encuentra la dirección. En los Estados Unidos, este sería el estado. En Suiza, el cantón. En el Reino Unido, la ciudad postal.</dd><br/>
+                            <dt>- <b>"country"</b></dt>
+                            <dd>Código de país</dd><br/>
+                            <dt>- <b>"country-name"</b></dt>
+                            <dd>Nombre del país</dd><br/>
+                            <dt>- <b>"postal-code"</b></dt>
+                            <dd>Código postal o ZIP</dd><br/>
+                            <dt>- <b>"cc-name"</b></dt>
+                            <dd>El nombre completo tal como está impreso o asociado con un instrumento de pago, como una tarjeta de crédito. Por lo general, se prefiere utilizar un campo de nombre completo en lugar de dividir el nombre en pedazos.</dd><br/>
+                            <dt>- <b>"cc-given-name"</b></dt>
+                            <dd>Nombre (first name) en un instrumento de pago como una tarjeta de crédito.</dd><br/>
+                            <dt>- <b>"cc-additional-name"</b></dt>
+                            <dd>Un segundo nombre (middle name) como se indica en un instrumento de pago o tarjeta de crédito.</dd><br/>
+                            <dt>- <b>"cc-family-name"</b></dt>
+                            <dd>Un apellido, tal como figura en una tarjeta de crédito</dd><br/>
+                            <dt>- <b>"cc-number"</b></dt>
+                            <dd>Un número de tarjeta de crédito u otro número que identifique un método de pago, como un número de cuenta.</dd><br/>
+                            <dt>- <b>"cc-exp"</b></dt>
+                            <dd>Una fecha de vencimiento del método de pago, generalmente en el formato “MM / YY” o “MM / YYYY”.</dd><br/>
+                            <dt>- <b>"cc-exp-month"</b></dt>
+                            <dd>El mes en el que vence el método de pago</dd><br/>
+                            <dt>- <b>"cc-exp-year"</b></dt>
+                            <dd>El año en el que vence el método de pago</dd><br/>
+                            <dt>- <b>"cc-csc"</b></dt>
+                            <dd>El código de seguridad del instrumento de pago; en las tarjetas de crédito, este es el número de verificación de 3 dígitos que se encuentra en el reverso de la tarjeta.</dd><br/>
+                            <dt>- <b>"cc-type"</b></dt>
+                            <dd>El tipo de instrumento de pago (como “Visa” o “Master Card”).</dd><br/>
+                            <dt>- <b>"transaction-currency"</b></dt>
+                            <dd>La moneda en la que se realizará la transacción.</dd><br/>
+                            <dt>- <b>"transaction-amount"</b></dt>
+                            <dd>La cantidad, dada en la moneda especificada por “transacción-moneda”, de la transacción, para un formulario de pago.</dd><br/>
+                            <dt>- <b>"language"</b></dt>
+                            <dd>Un idioma preferido, dado como una etiqueta de idioma BCP 47 válida.</dd><br/>
+                            <dt>- <b>"bday"</b></dt>
+                            <dd>Una fecha de nacimiento, como una fecha completa.</dd><br/>
+                            <dt>- <b>"bday-day"</b></dt>
+                            <dd>El día de una fecha de nacimiento.</dd><br/>
+                            <dt>- <b>"bday-month"</b></dt>
+                            <dd>El mes de una fecha de nacimiento.</dd><br/>
+                            <dt>- <b>"bday-year"</b></dt>
+                            <dd>El año de una fecha de nacimiento.</dd><br/>
+                            <dt>- <b>"sex"</b></dt>
+                            <dd>Una identidad de género (como “Mujer”, “Fa’afafine”, “Hombre”), como texto de forma libre sin nuevas líneas.</dd><br/>
+                            <dt>- <b>"tel"</b></dt>
+                            <dd>Un número de teléfono completo, incluido el código del país. Si necesita dividir el número de teléfono en sus componentes, puede usar estos valores para esos campos:
+                                <ol>
+                                    <li><b>tel-country-code</b></li>
+                                    <dd>El código de país, como “1” para Estados Unidos, Canadá y otras áreas de América del Norte y partes del Caribe.</dd>
+                                    <li><b>tel-national</b></li>
+                                    <dd>El número de teléfono completo sin el componente de código de país, incluido un prefijo interno del país. Para el número de teléfono “1-855-555-6502”, el valor de este campo sería “855-555-6502”</dd>
+                                    <li><b>tel-area-code</b></li>
+                                    <dd>El código de área, con cualquier prefijo interno del país aplicado si corresponde.</dd>
+                                    <li><b>tel-local</b></li>
+                                    <dd>El número de teléfono sin el código de país o área. Esto se puede dividir en dos partes, para los números de teléfono que tienen un número de intercambio y luego un número dentro del intercambio. Para el número de teléfono “555-6502”, utilice “tel-local-prefix” para “555” y “tel-local-suffix” para “6502”.</dd>
+                                    <li><b>tel-extension</b></li>
+                                    <dd>Un código de extensión de teléfono dentro del número de teléfono, como un número de habitación o suite en un hotel o una extensión de oficina en una empresa.</dd>
+                                </ol>
+                            </dd><br/>
+                            <dt>- <b>"impp"</b></dt>
+                            <dd>Una URL para un punto final de protocolo de mensajería instantánea, como “xmpp: username@example.net”.</dd><br/>
+                            <dt>- <b>"url"</b></dt>
+                            <dd>Una URL, como una página de inicio o la dirección del sitio web de la empresa, según corresponda, dado el contexto de los otros campos del formulario.</dd><br/>
+                            <dt>- <b>"photo"</b></dt>
+                            <dd>La URL de una imagen que representa a la persona, la empresa o la información de contacto proporcionada en los otros campos del formulario.</dd><br/>
+                        </dl>
+                    </p>
+                </div>
+            </section>
+        </article>
+        <dl>
+        </dl>
+    </main>
+</body>
+</html>
