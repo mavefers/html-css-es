@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+    <header><h1>Select</h1></header>
+    <main>
+        <article>
+            <section>
+                <div>
+                    <p>Como valor del atributo <i>value=" "</i>, se tiene que colocar lo mismo que va dentro del elemento <i>< option ></i>, porque cuando el usuario seleccione la opción, el valor es lo que se va a guardar y es lo que se estaria enviando a la base de datos (db).</p>
+                    <select name="cursos" id=""> <!-- name=" ", para lo que se va a aseleccionar --> <!-- id=" ", sirve para manipular la informacion que se va a enviar -->
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="HTML5">HTML5</option>
+                        <option value="CSS3">CSS3</option>
+                        <option value="Web Standards">Web Standards</option>
+                    </select>
+                </div><br/>
+                <div>
+                    <p><b>Buenas prácticas:</b> <b><i>< input list=" " ></i></b>, la manera ideal de realizar la función de la etiqueta <b><i>< select ></i></b>  | (Solo si hay demasiadas opciones)</p>
+                    <p>Se pueden visualizar las opciones al hacer click en la flecha que aparece, cuando hacemos focus sobre la caja de texto con el cursor.<br/>También podemos escribir sobre la caja de texto, para poder ver las opciones que tengan palabras o letras que coincidan con lo que hemos escrito, esto para encontrar rápidamente la opción que estamos buscando.<br/>También podemos recaudar información del usuario, al momento de que el mismo usuario introduzca un nuevo dato en la caja de texto, con esto también podemos hacer una validación para enviar un mensaje de retorno, al usuario.</p>
+                    <p>Así le estarás dando una mejor opción al usuario, de encontrar lo que está buscando, sin tener que hacer scroll infinito para llegar a esa opción.</p>
+                    <input list="cursos"> <!-- nuevo atributo, 'list' -->
+                    <datalist id="cursos"><!-- adentro irán las opciones que estaremos buscando // como valor de id, irá el mismo valor que el valor de 'list=" "'-->
+                        <option value="JavaScript"></option>
+                        <option value="HTML5"></option>
+                        <option value="CSS3"></option>
+                        <option value="Web Standards"></option>
+                    </datalist>
+                </div><br/>
+                <div>
+                    <dl>
+                        <dt>Para crear inputs con una lista de varias opciones, se puede desarrollar de dos maneras diferentes:</dt>
+                        <ol>
+                            <li>
+                                <b>Etiqueta < select ></b>: Esta permite crear la lista, con las etiquetas <i>< option ></i>.
+                                <figure>
+                                    <img src="./images/select.jpg" alt="Bloque de código de la etiqueta < select >."/>
+                                    <figcaption>Bloque de código de la etiqueta <i>< select ></i>.</figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <b>Etiqueta < input list = “ ” ></b>: De este modo, se puede utilizar una etiqueta <i>< datalist ></i> con etiquetas <i>< option ></i> dentro del input. Así, el usuario podrá escribir dentro del input, y filtrar los resultados de la lista.
+                                <figure>
+                                    <img src="./images/select2-datalist.jpg" alt="Bloque de código."/>
+                                    <figcaption>Bloque de código.</figcaption>
+                                </figure>
+                            </li>
+                        </ol>
+                    </dl>
+                </div><br/>
+                <div>
+                    <ul>
+                        <li>Link: https://css-tricks.com/dropdown-default-styling/</li>
+                        <li>Resumen<br/>
+                            <figure>
+                                <img src="./images/resumen-19.jpg" alt="" width="700">
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
