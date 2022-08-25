@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/class-22/style.css"/>
+    <title>Clase CSS</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <p>El primer paso es ligar un archivo CSS a nuestro proyecto, a un archivo HTML, mediante la etiqueta <i>< link /></i></p>
+        <article>
+            <section>
+                <div>
+                    <p>Existen tres maneras de implementar diseño a nuestro proyecto:</p>
+                    <ol>
+                        <li>Mediante la etiqueta <i>< link /></i> y un archivo <i>CSS</i> externo - <span>(la manera correcta)</span></li>
+                        <dd>Esta es la manera ideal para implementar CSS en nuestro proyecto, ya que se estaría trabajando de manera ordenada, al hacer el diseño del proyecto en un archivo independiente al documento .html principal.</dd><br/>
+                        <li>Mediante la etiqueta <i>< style /></i> - <span>(No es una buena práctica)</span></li>
+                        <dd>Es una etiqueta que permite implementar CSS dentro de un archivo HTML. Se usa en algunas cosas, pero no es la mejor práctica, ya que si las lineas de estilos son muchas, el proyecto comenzará a demorar en cargar.<br/><span><i>Solo es permitido cuando se tienen pocas lineas de CSS.</i></span></dd><br/>
+                        <li>Estilos CSS embebidosen el HTML / como atributo directo en una etiqueta HTML: <i>style=" "</i> - <span>(Tampoco es una buena práctica)</span></li>
+                        <dd>
+                            Se le puede agregar ciertos estilos al proyecto, dentro del HTML, simplemente usando el tributo <i>style=" "</i> en cada etiqueta html.<br/>Se le puede modificar el color, el tamaño, el espacio de la caja, la posición, el tamaño de la fuente, etc.<br/>Ejemplo:
+                            <p>
+                                <span><b>< p style="color: royalblue;" ></b>Soy un texto<b>< / p></b></span> - <span style="color: royalblue">Soy un texto</span><br/>
+                                <span><b>< p style="font-size: 30px;" ></b>Soy un texto<b>< / p></b></span> - <span style="font-size: 30px">Soy un texto</span><br/>
+                                <span><b>< p style="font-size: 30px; color: royalblue" ></b>Soy un texto<b>< / p></b></span> - <span style="font-size: 30px; color: royalblue">Soy un texto</span>
+                            </p>
+                            Evitar esta práctica, porque por error podremos reescribir todos los estilos almacenados en nuestro archivo CSS que está dentro de la etiqueta <i>< link /></i>.
+                        </dd>
+                    </ol>
+                </div>
+                <div>
+                    <h4>Etiqueta <i>< link /></i></h4>
+                    <dd>Nos ayuda a referenciar donde está el archivo de CSS que tenemos que jalar.</dd>
+                    <p>Como buena práctica, es mejor dividir los archivos en directorios independientes, por un lado el .html y por el otro, el .css</p>
+                </div>
+                <div>
+                    <h4>Agregar estilos dentro de la etiqueta <i>< style > < / style ></i></h4>
+                    <dd>
+                        En esta manera de implementar CSS a nuestro proyecto, tenemos que indicarle al CSS el elemento que queremos modificar.<br/>La sintaxis es generando "brackets" <b>{...}</b> que funcionarían como parámetro de cada elemento que queramos modificar, agregando por dentro, los estilos que queremos implementar en cada elemento. Por dentro, nosotros podremos agregar todos los estilos que queramos.
+                        <p>Ejemplo:<br/><span>p {<br/>color: red;<br/>font-size: 30px;<br/>}</span></p>
+                        Si no precisamos la etiqueta en la que queremos aplicar el estilo, usando atributos como <b>id=""</b> o <b>class=""</b>, el estilo afectará a todas las etiquetas que coincidan con lo que hemos declarado. Esto quiere decir que, si ponemos estilo a una etiqueta <i>< p ></i>, afectará a todas las etiquetas de párrafo que hayan en el documento, a menos que la etiqueta tenga un identificador/id, <i>< p id="parrafo1" ></i>, o una clase/class, <i>< p class="parrafo-principal" ></i>.
+                    </dd>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+</html>
