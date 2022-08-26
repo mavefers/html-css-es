@@ -19,9 +19,9 @@
                     <ol>
                         <li>Mediante la etiqueta <i>< link /></i> y un archivo <i>CSS</i> externo - <span>(la manera correcta)</span></li>
                         <dd>Esta es la manera ideal para implementar CSS en nuestro proyecto, ya que se estaría trabajando de manera ordenada, al hacer el diseño del proyecto en un archivo independiente al documento .html principal.</dd><br/>
-                        <li>Mediante la etiqueta <i>< style /></i> - <span>(No es una buena práctica)</span></li>
+                        <li>Mediante la etiqueta <i>< style ></i> - <span>(No es una buena práctica)</span></li>
                         <dd>Es una etiqueta que permite implementar CSS dentro de un archivo HTML. Se usa en algunas cosas, pero no es la mejor práctica, ya que si las lineas de estilos son muchas, el proyecto comenzará a demorar en cargar.<br/><span><i>Solo es permitido cuando se tienen pocas lineas de CSS.</i></span></dd><br/>
-                        <li>Estilos CSS embebidosen el HTML / como atributo directo en una etiqueta HTML: <i>style=" "</i> - <span>(Tampoco es una buena práctica)</span></li>
+                        <li><b>Estilos CSS embebidos en el HTML</b> / como atributo directo en una etiqueta HTML: <i>style=" "</i> - <span>(Tampoco es una buena práctica)</span></li>
                         <dd>
                             Se le puede agregar ciertos estilos al proyecto, dentro del HTML, simplemente usando el tributo <i>style=" "</i> en cada etiqueta html.<br/>Se le puede modificar el color, el tamaño, el espacio de la caja, la posición, el tamaño de la fuente, etc.<br/>Ejemplo:
                             <p>
@@ -41,10 +41,33 @@
                 <div>
                     <h4>Agregar estilos dentro de la etiqueta <i>< style > < / style ></i></h4>
                     <dd>
-                        En esta manera de implementar CSS a nuestro proyecto, tenemos que indicarle al CSS el elemento que queremos modificar.<br/>La sintaxis es generando "brackets" <b>{...}</b> que funcionarían como parámetro de cada elemento que queramos modificar, agregando por dentro, los estilos que queremos implementar en cada elemento. Por dentro, nosotros podremos agregar todos los estilos que queramos.
+                        Esta etiqueta se coloca, únicamente, dentro del apartado del <i>< head ></i>, en la parte superior del código. En esta manera de implementar CSS a nuestro proyecto, tenemos que indicarle al CSS el elemento que queremos modificar.<br/>La sintaxis es generando "brackets" <b>{...}</b> que funcionarían como parámetro de cada elemento que queramos modificar, agregando por dentro, los estilos que queremos implementar en cada elemento. Por dentro, nosotros podremos agregar todos los estilos que queramos.
                         <p>Ejemplo:<br/><span>p {<br/>color: red;<br/>font-size: 30px;<br/>}</span></p>
                         Si no precisamos la etiqueta en la que queremos aplicar el estilo, usando atributos como <b>id=""</b> o <b>class=""</b>, el estilo afectará a todas las etiquetas que coincidan con lo que hemos declarado. Esto quiere decir que, si ponemos estilo a una etiqueta <i>< p ></i>, afectará a todas las etiquetas de párrafo que hayan en el documento, a menos que la etiqueta tenga un identificador/id, <i>< p id="parrafo1" ></i>, o una clase/class, <i>< p class="parrafo-principal" ></i>.
                     </dd>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h4>Sobre CSS</h4>
+                    <p>Tenemos 3 maneras de mandar a llamar ciertas <b>propiedades</b> para implementar los estilos</p>
+                    <ol>
+                        <li>Mediante el elemento/tag</li>
+                        <dd>
+                            Quiere decir, por la etiqueta a la cual se le quiere agregar un estilo personalizado
+                            <p>elemento {<br/>atributo: valor;<br/>atributo: v4l0rpx;<br/>}</p>
+                        </dd><br/>
+                        <li>Mediante su clase / Atributo class=" "</li>
+                        <dd>
+                            Primero que nada, la etiqueta a la que queremos implementar el estilo <b>tiene que tener una clase</b> ( <i>class=" "</i> ) como atributo.<br/>Para poder mandar a llamar a esa clase que se ha creado como atributo, dentro de la etiqueta seleccionada, se tiene que iniciar escribiendo un punto ( <b>.</b> ), y el nombre de esa clase (class=" "), o sea <b>el valor de la clase que hemos designado</b> (class="valor").
+                            <p><b>.</b>nombre_clase <b>{</b><br/>atributo: valor;<br/>atributo: v4l0rpx;<br/><b>}</b></p>
+                        </dd><br/>
+                        <li>Mediante su identificador / id=" "</li>
+                        <dd>
+                            Primero que nada, la etiqueta a la que queremos implementar el estilo <b>tiene que tener un identificador</b> ( <i>id=" "</i> ) como atributo.<br/>Para poder mandar a llamar a esa clase que se ha creado como atributo, dentro de la etiqueta seleccionada, se tiene que iniciar escribiendo un punto ( <b>#</b> ), y el nombre del identificador (id=" "), o sea <b>el valor del identificador que hemos designado</b> (id="valor").
+                            <p><b>#</b>nombre_id <b>{</b><br/>atributo: valor;<br/>atributo: v4l0rpx;<br/><b>}</b></p>
+                        </dd><br/>
+                    </ol>
                 </div>
             </section>
         </article>
