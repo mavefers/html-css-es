@@ -46,28 +46,33 @@
                         Si no precisamos la etiqueta en la que queremos aplicar el estilo, usando atributos como <b>id=""</b> o <b>class=""</b>, el estilo afectará a todas las etiquetas que coincidan con lo que hemos declarado. Esto quiere decir que, si ponemos estilo a una etiqueta <i>< p ></i>, afectará a todas las etiquetas de párrafo que hayan en el documento, a menos que la etiqueta tenga un identificador/id, <i>< p id="parrafo1" ></i>, o una clase/class, <i>< p class="parrafo-principal" ></i>.
                     </dd>
                 </div>
-            </section>
+            </section><br/>
             <section>
+                <h4>Selectores: etiqueta - .class - #id</h4>
                 <div>
-                    <h4>Sobre CSS</h4>
                     <p>Tenemos 3 maneras de mandar a llamar ciertas <b>propiedades</b> para implementar los estilos</p>
                     <ol>
                         <li>Mediante el elemento/tag</li>
                         <dd>
                             Quiere decir, por la etiqueta a la cual se le quiere agregar un estilo personalizado
-                            <p>elemento {<br/>atributo: valor;<br/>atributo: v4l0rpx;<br/>}</p>
+                            <p>elemento <b>{</b><br/>atributo: valor;<br/>atributo: v4l0rpx;<br/><b>}</b><br/><span>Selector de etiqueta - (cubre todos los elementos de forma global)</span></p>
                         </dd><br/>
                         <li>Mediante su clase / Atributo class=" "</li>
                         <dd>
                             Primero que nada, la etiqueta a la que queremos implementar el estilo <b>tiene que tener una clase</b> ( <i>class=" "</i> ) como atributo.<br/>Para poder mandar a llamar a esa clase que se ha creado como atributo, dentro de la etiqueta seleccionada, se tiene que iniciar escribiendo un punto ( <b>.</b> ), y el nombre de esa clase (class=" "), o sea <b>el valor de la clase que hemos designado</b> (class="valor").
-                            <p><b>.</b>nombre_clase <b>{</b><br/>atributo: valor;<br/>atributo: v4l0rpx;<br/><b>}</b></p>
+                            <p><b>.</b>nombre_clase <b>{</b><br/>atributo: valor;<br/>atributo: v4l0rpx;<br/><b>}</b><br/><span class="textos">Selector de clase - (class=" ")</span></p>
                         </dd><br/>
                         <li>Mediante su identificador / id=" "</li>
                         <dd>
-                            Primero que nada, la etiqueta a la que queremos implementar el estilo <b>tiene que tener un identificador</b> ( <i>id=" "</i> ) como atributo.<br/>Para poder mandar a llamar a esa clase que se ha creado como atributo, dentro de la etiqueta seleccionada, se tiene que iniciar escribiendo un punto ( <b>#</b> ), y el nombre del identificador (id=" "), o sea <b>el valor del identificador que hemos designado</b> (id="valor").
-                            <p><b>#</b>nombre_id <b>{</b><br/>atributo: valor;<br/>atributo: v4l0rpx;<br/><b>}</b></p>
+                            Primero que nada, la etiqueta a la que queremos implementar el estilo <b>tiene que tener un identificador</b> ( <i>id=" "</i> ) como atributo.<br/>Para poder mandar a llamar a ese identificador que se ha creado como atributo, dentro de la etiqueta seleccionada, se tiene que iniciar escribiendo el signo numeral ( <b>#</b> ), y el nombre del identificador (id=" "), o sea <b>el valor del identificador que hemos designado</b> (id="valor").<br/><span>El <i>valor</i> del atributo <i>id=" "</i> puede ser usado solo una vez por página, esto quiere decir que el <i>valor</i> tiene que ser único por página, o sea, que solo puede haber un <i>id="texto1"</i> por documento.</span>
+                            <p><b>#</b>nombre_id <b>{</b><br/>atributo: valor;<br/>atributo: v4l0rpx;<br/><b>}</b><br/><span id="texto1">Selector id - (id=" ")</span></p>
                         </dd><br/>
                     </ol>
+                </div>
+                <div>
+                    <h4>¿En qué momento se debe usar <i>id</i>, y en qué momento se debe usar clase (class=" ")</h4>
+                    <p>El etributo <i>class=" "</i> se usa cuando se quiere aplicar un estilo en un grupo selecto de elementos, por ejemplo, cuando hay 5 párrafos pero a solo 3 les quiero aplicar el estilo; para esto, se tiene que agregar el atributo <i>class=" "</i>, con el mismo valor, <i>class="textos"</i> a cada uno de los elementos, los cuales se quiere modificar.</p>
+                    <p>El atributo <i>id=" "</i> se  usa cuando se quiere aplicar estilos solo a un único elemento, solo a uno. No se debe colocar el mismo id a más de un elemento.</p>
                 </div>
             </section>
         </article>
