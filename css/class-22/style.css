@@ -1,3 +1,17 @@
+/* Para hacer comentarios automáticos en una linea de código: (Ctrl + /)  */
+
+/* SELECTORES: etiqueta - .class - #id */
+/* etiqueta/elemento */
 span {
     color:rgb(9, 0, 179);
+}
+
+/* class */
+.textos {
+    color: red;
+}
+
+/* id */
+#texto1 {
+    color:rgb(3, 97, 0)
 }
