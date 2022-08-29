@@ -1,22 +1,53 @@
 body {
     background-color: bisque;
+    font-size: 150%;
 }
-.figure-imagen-fresa {
-    margin: 0%;
+h1 {
+    color: rgb(21, 103, 0);
 }
-.imagen_fresa {
+.li-frutas {
+    display: inline-block;
+    margin-right: 10%;
+}
+
+.figure-imagen-manzana {
+    margin: auto;
+}
+.imagen-manzana {
     width: 280px;
-    height: 158px;
-    border-radius: 15%;
+    height: 190px;
+    border-end-end-radius: 15%;
     border-style: dotted;
-    border-color: #ffffff;
     border-width: 5px;
+    border-color: red grey;
 }
-.imagen_milkshake {
+.imagen-pie {
     width: 280px;
-    height: 158px;
+    height: 190px;
     border-radius: 15%;
     border-style: dotted;
+    border-width: 5px;
     border-color: red blue blueviolet whitesmoke;
+}
+
+.figure-imagen-fresa {
+    margin: auto;
+}
+.imagen-fresa {
+    width: 280px;
+    height: 190px;
+    border-radius: 15%;
+    border-style: dotted;
     border-width: 5px;
+    border-color: #98ff81;
+}
+.imagen-milkshake {
+    width: 280px;
+    height: 190px;
+    border-radius: 15%;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: red blue blueviolet whitesmoke;
+}
+.fc-fresa {
 }
