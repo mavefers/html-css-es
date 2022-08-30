@@ -7,6 +7,8 @@ span {
 }
 body {
     font-size: 150%;
+    background-color:rgb(224, 207, 255);
+    margin-inline: 2%;
 }
 
 /* class */
@@ -16,12 +18,24 @@ body {
 
 /* id */
 #texto1 {
-    color:rgb(3, 97, 0)
+    color:rgb(3, 97, 0);
 }
 
 /* ----- */
 
-.img-models {
-    inline-size: 280px;
-    block-size: 190px;
+#title-dates {
+    margin-block-start: 5%;
+    margin-inline-start: 5%;
+}
+#img-models {
+    margin-block: 0px;
+}
+#fig-models {
+    margin-inline: 100px;
+}
+
+#figure-models {
+    padding: 0px;
+    border: 0px;
+    margin-inline:247px;
 }
