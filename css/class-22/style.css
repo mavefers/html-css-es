@@ -5,6 +5,9 @@
 span {
     color:rgb(9, 0, 179);
 }
+body {
+    font-size: 150%;
+}
 
 /* class */
 .textos {
@@ -14,4 +17,11 @@ span {
 /* id */
 #texto1 {
     color:rgb(3, 97, 0)
+}
+
+/* ----- */
+
+.img-models {
+    inline-size: 280px;
+    block-size: 190px;
 }
