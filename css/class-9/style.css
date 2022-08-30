@@ -36,10 +36,10 @@ h1 {
 .imagen-fresa {
     width: 280px;
     height: 190px;
-    border-radius: 15%;
+    border-end-start-radius: 15%;
     border-style: dotted;
     border-width: 5px;
-    border-color: #98ff81;
+    border-color: #8cb300;
 }
 .imagen-milkshake {
     width: 280px;
