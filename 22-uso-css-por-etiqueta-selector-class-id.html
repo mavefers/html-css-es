@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/class-22/style.css"/>
-    <title>Clase CSS</title>
+    <title>SELECTORES</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <h1>USO DE CSS EN HTML</h1>
+    </header>
     <main>
         <p>El primer paso es ligar un archivo CSS a nuestro proyecto, a un archivo HTML, mediante la etiqueta <i>< link /></i></p>
         <article>
             <section>
                 <div>
-                    <p>Existen tres maneras de implementar diseño a nuestro proyecto:</p>
+                    <h2>Conectando HTML y CSS</h2>
+                    <p>Existen tres maneras de implementar diseño a nuestro proyecto: <span><b>CSS externo</b>, <b>CSS interno</b>, <b>CSS en línea</b>.</span></p>
                     <ol>
-                        <li>Mediante la etiqueta <i>< link /></i> y un archivo <i>CSS</i> externo - <span>(la manera correcta)</span></li>
+                        <li><span class="li-title-3-tipos-de-css"><b>CSS externo:</b></span> Mediante la etiqueta <i>< link /></i> y un archivo <i>CSS</i> externo - <span>(la manera correcta)</span></li>
                         <dd>Esta es la manera ideal para implementar CSS en nuestro proyecto, ya que se estaría trabajando de manera ordenada, al hacer el diseño del proyecto en un archivo independiente al documento .html principal.</dd><br/>
-                        <li>Mediante la etiqueta <i>< style ></i> - <span>(No es una buena práctica)</span></li>
+                        <li><span class="li-title-3-tipos-de-css"><b>CSS interno:</b></span> Mediante la etiqueta <i>< style ></i> - <span>(No es una buena práctica)</span></li>
                         <dd>Es una etiqueta que permite implementar CSS dentro de un archivo HTML. Se usa en algunas cosas, pero no es la mejor práctica, ya que si las lineas de estilos son muchas, el proyecto comenzará a demorar en cargar.<br/><span><i>Solo es permitido cuando se tienen pocas lineas de CSS.</i></span></dd><br/>
-                        <li><b>Estilos CSS embebidos en el HTML</b> / como atributo directo en una etiqueta HTML: <i>style=" "</i> - <span>(Tampoco es una buena práctica)</span></li>
+                        <li><span class="li-title-3-tipos-de-css"><b>CSS en línea:</b></span> <b>Estilos CSS embebidos en el HTML</b> / como atributo directo en una etiqueta HTML: <i>style=" "</i> - <span>(Tampoco es una buena práctica)</span></li>
                         <dd>
                             Se le puede agregar ciertos estilos al proyecto, dentro del HTML, simplemente usando el tributo <i>style=" "</i> en cada etiqueta html.<br/>Se le puede modificar el color, el tamaño, el espacio de la caja, la posición, el tamaño de la fuente, etc.<br/>Ejemplo:
                             <p>
@@ -52,11 +55,16 @@
                 </div>
             </section>
             <section>
-                <h4 id="h4-title-selectors" class="h4-title">Selectores: etiqueta - .class - #id</h4>
+                <h2 id="h4-title-selectors" class="h4-title">Selectores: Universal(*) - elemento - .class - #id</h2>
                 <div>
-                    <p>Tenemos 3 maneras de mandar a llamar ciertas <b>propiedades</b> para implementar los estilos</p>
+                    <p>Tenemos 4 maneras de mandar a llamar ciertas <b>propiedades</b> para implementar los estilos</p>
                     <ol>
                         <li>Mediante el elemento/tag</li>
+                        <dd>
+                            Quiere decir, por la etiqueta a la cual se le quiere agregar un estilo personalizado
+                            <p>elemento <b>{</b><br/>atributo: valor;<br/>atributo: v4l0rpx;<br/><b>}</b><br/><span>Selector de etiqueta - (cubre todos los elementos de forma global)</span></p>
+                        </dd><br/>
+                        <li>Mediante el Selector universal (*)</li>
                         <dd>
                             Quiere decir, por la etiqueta a la cual se le quiere agregar un estilo personalizado
                             <p>elemento <b>{</b><br/>atributo: valor;<br/>atributo: v4l0rpx;<br/><b>}</b><br/><span>Selector de etiqueta - (cubre todos los elementos de forma global)</span></p>
@@ -91,7 +99,7 @@
                 <div>
                     <h2 id="title-dates">Datos que agregar al construir con CSS</h2>
                     <p>Antes se usaba '<i>width</i>' para definir el ancho, y '<i>height</i>' para definir el alto; en la actualidad, estas propiedades son remplazadas por '<i>inline-size</i>' y '<i>block-size</i>'.</p>
-                    <p>El <i>margin</i> está relacinado directamente con el <i>content</i>.</p>
+                    <p>El <i>margin</i> está relacinado directamente con el <i>content</i> de otro bloque.</p>
                     <figure id="figure-models">
                         <img id="img-models" src="./images/models-css.png" alt="" />
                         <figcaption id="fig-models">Fuente: <a href="https://lenguajecss.com/css/modelo-de-cajas/propiedades-logicas-css/" target="_blank">lenguajecss.com</a></figcaption>
