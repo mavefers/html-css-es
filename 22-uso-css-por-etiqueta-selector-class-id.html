@@ -55,29 +55,37 @@
                 </div>
             </section>
             <section>
-                <h2 id="h4-title-selectors" class="h4-title">Selectores: Universal(*) - elemento - .class - #id</h2>
                 <div>
+                    <h2>Anatomía del codigo CSS</h2>
+                    <figure>
+                        <img id="img-css-anatomy" src="/images/majo-apuntes1.jpg" alt="">
+                        <figcaption id="fig-css-anatomy">Fuente: <a href="https://drive.google.com/file/d/1WqIw3tPS6gNhEnma7iHl-PEfByKSIYGK/view">"Los apuntes de Majo"</a></figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <h2 id="h2-title-selectors" class="h2-title">Selectores: - universal(*) - elemento - .class - #id</h2>
                     <p>Tenemos 4 maneras de mandar a llamar ciertas <b>propiedades</b> para implementar los estilos</p>
                     <ol>
+                        <li>Mediante el Selector universal (*)</li>
+                        <dd>
+                            Selecciona todos los elementos del HTML.
+                            <p>* <b>{</b><br/>atributo: valor;<br/>atributo: v4l0rpx;<br/><b>}</b><br/><span>Selector de etiqueta - (cubre todos los elementos de forma global)</span></p>
+                        </dd><br/>
                         <li>Mediante el elemento/tag</li>
                         <dd>
                             Quiere decir, por la etiqueta a la cual se le quiere agregar un estilo personalizado
-                            <p>elemento <b>{</b><br/>atributo: valor;<br/>atributo: v4l0rpx;<br/><b>}</b><br/><span>Selector de etiqueta - (cubre todos los elementos de forma global)</span></p>
-                        </dd><br/>
-                        <li>Mediante el Selector universal (*)</li>
-                        <dd>
-                            Quiere decir, por la etiqueta a la cual se le quiere agregar un estilo personalizado
-                            <p>elemento <b>{</b><br/>atributo: valor;<br/>atributo: v4l0rpx;<br/><b>}</b><br/><span>Selector de etiqueta - (cubre todos los elementos de forma global)</span></p>
+                            <p>selector <b>{</b><br/>atributo: valor;<br/>atributo: v4l0rpx;<br/><b>}</b><br/><span>Selector de etiqueta - (cubre todos los elementos de forma global)</span></p>
                         </dd><br/>
                         <li>Mediante su clase / Atributo class=" "</li>
                         <dd>
-                            Primero que nada, la etiqueta a la que queremos implementar el estilo <b>tiene que tener una clase</b> ( <i>class=" "</i> ) como atributo.<br/>Para poder mandar a llamar a esa clase que se ha creado como atributo, dentro de la etiqueta seleccionada, se tiene que iniciar escribiendo un punto ( <b>.</b> ), y el nombre de esa clase (class=" "), o sea <b>el valor de la clase que hemos designado</b> (class="valor").
-                            <p><b>.</b>nombre_clase <b>{</b><br/>atributo: valor;<br/>atributo: v4l0rpx;<br/><b>}</b><br/><span class="textos">Selector de clase - (class=" ")</span></p>
+                            Primero que nada, la etiqueta a la que queremos implementar el estilo <b>tiene que tener una clase</b> ( <i>class=" "</i> ) como atributo.<br/>Para poder mandar a llamar a esa clase que se ha creado como atributo, dentro de la etiqueta seleccionada, se tiene que iniciar escribiendo un punto ( <b>.</b> ) y el nombre de esa clase (class=" "), o sea <b>el valor de la clase que hemos designado</b> (class="valor").
+                            <p><b>.</b>selector <b>{</b><br/>atributo: valor;<br/>atributo: v4l0rpx;<br/><b>}</b><br/><span class="textos">Selector de clase - (class=" ")</span></p>
+                            <p id="p-clase"><b>En HTML es posible agregar una misma clase a más de un elemento.</b></p>
                         </dd><br/>
                         <li>Mediante su identificador / id=" "</li>
                         <dd>
                             Este caso es similar, ya que la etiqueta a la que queremos implementar el estilo <b>tiene que tener un identificador</b> ( <i>id=" "</i> ) como atributo.<br/>Para poder mandar a llamar a ese identificador que se ha creado como atributo, dentro de la etiqueta seleccionada, se tiene que iniciar escribiendo el signo numeral ( <b>#</b> ), y el nombre del identificador (id=" "), o sea <b>el valor del identificador que hemos designado</b> (id="valor").<br/><span>El <i>valor</i> del atributo <i>id=" "</i> puede ser usado solo una vez por página, esto quiere decir que el <i>valor</i> tiene que ser único por página, o sea, que solo puede haber un <i>id="texto1"</i> por documento.</span>
-                            <p><b>#</b>nombre_id <b>{</b><br/>atributo: valor;<br/>atributo: v4l0rpx;<br/><b>}</b><br/><span id="texto1">Selector id - (id=" ")</span></p>
+                            <p><b>#</b>selector <b>{</b><br/>atributo: valor;<br/>atributo: v4l0rpx;<br/><b>}</b><br/><span id="texto1">Selector id - (id=" ")</span></p>
                         </dd>
                     </ol>
                 </div>
@@ -99,7 +107,7 @@
                 <div>
                     <h2 id="title-dates">Datos que agregar al construir con CSS</h2>
                     <p>Antes se usaba '<i>width</i>' para definir el ancho, y '<i>height</i>' para definir el alto; en la actualidad, estas propiedades son remplazadas por '<i>inline-size</i>' y '<i>block-size</i>'.</p>
-                    <p>El <i>margin</i> está relacinado directamente con el <i>content</i> de otro bloque.</p>
+                    <p>El <i>margin</i> está relacionado, directamente, con el <i>content</i> de otro bloque.</p>
                     <figure id="figure-models">
                         <img id="img-models" src="./images/models-css.png" alt="" />
                         <figcaption id="fig-models">Fuente: <a href="https://lenguajecss.com/css/modelo-de-cajas/propiedades-logicas-css/" target="_blank">lenguajecss.com</a></figcaption>
