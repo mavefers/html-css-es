@@ -1,7 +1,17 @@
 /* Para hacer comentarios automáticos en una linea de código: (Ctrl + /)  */
 
-/* SELECTORES: etiqueta - .class - #id */
-/* etiqueta/elemento */
+/* SELECTORES: * (universal)  - etiqueta - .class - #id */
+
+/* Selector universal (*), selecciona todos los elementos del HTML
+
+* {
+    margin: 0;
+}
+
+*/
+
+
+/* elemento */
 span {
     color:rgb(9, 0, 179);
 }
@@ -11,12 +21,16 @@ body {
     margin-inline: 2%;
 }
 
-/* class */
+/* class - Selectores de clase: Es la forma más común de aplicar estilos. Inicia con un punto (.)
+Para que los selectores de clase funcionen, y podamos asociar los estilos de esa clase a algún elemento, simplemente debemos agregar el atributo 'class' a ese elemento.
+*/
 .textos {
     color: red;
 }
 
-/* id */
+/* En HTML es posible agregar más de una clase a un elemento */
+
+/* id -  */
 #texto1 {
     color:rgb(3, 97, 0);
 }
@@ -24,6 +38,9 @@ body {
 /* ----- */
 dd {
     margin-inline-start:1.3%;
+}
+.li-title-3-tipos-de-css {
+    color: rgb(82, 0, 0);
 }
 .h4-title {
     margin-block-end:0.5%;
