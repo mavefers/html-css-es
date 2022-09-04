@@ -50,11 +50,26 @@ dd {
     margin-block-start: 5%;
     margin-inline-start: 5%;
 }
+#figure-css-anatomy {
+    margin-inline: 400px;
+}
+#img-css-anatomy {
+    border-radius: 0px 100px / 120px;
+    border-color: rgb(82, 0, 215);
+    border-style: inset;
+    border-width: 5px;
+}
+#fig-css-anatomy {
+    margin-inline: 10%;
+}
 #img-models {
-    margin-block: 0px;
+    width: 1024px;
+    height: 570px;
+    object-fit: cover;
+    object-position: 50% 46%;
 }
 #fig-models {
-    margin-inline: 100px;
+    margin-inline: 10%;
 }
 
 #figure-models {
@@ -62,3 +77,18 @@ dd {
     border: 0px;
     margin-inline:247px;
 }
+
+
+.cropped1 {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; /* Sirve para mantener la imagen fija, sin ser afectada por la reducción o aumento del tamaño de la caja. */
+    border: 5px solid black;
+    }
+    .cropped2 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Sirve para mantener la imagen fija, sin ser afectada por la reducción o aumento del tamaño de la caja. */
+    object-position: 20% 10%; /* Sirve para ajustar el area de la imagen a recortar. La propiedad object-position requiere de dos valores: x% y y% para manipular la imagen (la posicion predeterminada es de 50% 50%). Tambien podemos proporcionar posiciones de pixeles: xpx e ypx, pero eso generalmente no es útil. */
+    border: 5px solid black;
+    }
