@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/class-22/style.css"/>
-    <title>SELECTORES</title>
+    <title>SELECTORES y CLASES</title>
 </head>
 <body>
     <header>
@@ -57,13 +57,14 @@
             <section>
                 <div>
                     <h2>Anatomía del codigo CSS</h2>
-                    <figure>
+                    <figure id="figure-css-anatomy">
                         <img id="img-css-anatomy" src="/images/majo-apuntes1.jpg" alt="">
-                        <figcaption id="fig-css-anatomy">Fuente: <a href="https://drive.google.com/file/d/1WqIw3tPS6gNhEnma7iHl-PEfByKSIYGK/view">"Los apuntes de Majo"</a></figcaption>
+                        <figcaption id="fig-css-anatomy">Fuente: <a href="https://drive.google.com/file/d/1WqIw3tPS6gNhEnma7iHl-PEfByKSIYGK/view" target="_blank">"Los apuntes de Majo"</a></figcaption>
                     </figure>
                 </div>
                 <div>
                     <h2 id="h2-title-selectors" class="h2-title">Selectores: - universal(*) - elemento - .class - #id</h2>
+                    <p>Se utilizan para «seleccioinar» los elementos HTML que queremos diseñar.</p>
                     <p>Tenemos 4 maneras de mandar a llamar ciertas <b>propiedades</b> para implementar los estilos</p>
                     <ol>
                         <li>Mediante el Selector universal (*)</li>
@@ -75,6 +76,11 @@
                         <dd>
                             Quiere decir, por la etiqueta a la cual se le quiere agregar un estilo personalizado
                             <p>selector <b>{</b><br/>atributo: valor;<br/>atributo: v4l0rpx;<br/><b>}</b><br/><span>Selector de etiqueta - (cubre todos los elementos de forma global)</span></p>
+                        </dd>
+                        <dt>Agrupación de selectores</dt>
+                        <dd>
+                            <p>Sirve para cuando queramos que distintos elementos tengan un mismo estilo.</p>
+                            <p><span><b>Cuando tenemos selectores distintos, con los mismos valores:</b></span><br/>h2 {color: gray}<br/>p {color: gray}<br/><span><b>Podemos juntarlos en una sola linea, separándolos con coma (,).<br/>De esta manera tendremos un código más fácil y limpio:<br/></b></span>h2,p {color:gray}</p>
                         </dd><br/>
                         <li>Mediante su clase / Atributo class=" "</li>
                         <dd>
@@ -113,9 +119,24 @@
                         <figcaption id="fig-models">Fuente: <a href="https://lenguajecss.com/css/modelo-de-cajas/propiedades-logicas-css/" target="_blank">lenguajecss.com</a></figcaption>
                     </figure>
                 </div>
+                <div>
+                    <h4>EXTRA: Recortar imagen con CSS > <a href="https://www.delftstack.com/es/howto/html/html-crop-image/">Fuente</a></h4>
+                    <div>
+                        <h3> Original image: </h3>
+                        <img src="https://tinyurl.com/k764en3w">
+                        <h3> Cropped image using object-fit: </h3>
+                        <img
+                        class="cropped1" src="https://tinyurl.com/k764en3w">
+                        <h3> Cropped image adjusted with object-position: </h3>
+                        <img
+                        class="cropped2" src="https://tinyurl.com/k764en3w"> 
+                        </div>
+                </div>
             </section>
         </article>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Ruta de estudios: Platzi.com<br/>Fuentes: Platzi.com - Stackoverflow.com - losapuntesdemajo.vercel.app - developer.mozilla.org - delftstack.com</p>
+    </footer>
 </body>
 </html>
