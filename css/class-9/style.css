@@ -44,8 +44,8 @@ h1 {
 .imagen-milkshake {
     width: 280px;
     height: 190px;
-    border-radius: 15%;
+    border-radius: 25px;
     border-style: dotted;
     border-width: 5px;
-    border-color: red blue blueviolet whitesmoke;
+    border-color: red blue;
 }
