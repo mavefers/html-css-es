@@ -39,6 +39,7 @@ Para que los selectores de clase funcionen, y podamos asociar los estilos de esa
 dd {
     margin-inline-start:1.3%;
 }
+
 .li-title-3-tipos-de-css {
     color: rgb(82, 0, 0);
 }
@@ -82,13 +83,13 @@ dd {
 .cropped1 {
     width: 200px; 
     height: 200px; 
-    object-fit: cover; /* Sirve para mantener la imagen fija, sin ser afectada por la reducción o aumento del tamaño de la caja. */
+    object-fit: cover;
     border: 5px solid black;
     }
-    .cropped2 {
+.cropped2 {
     width: 200px;
     height: 200px;
-    object-fit: cover; /* Sirve para mantener la imagen fija, sin ser afectada por la reducción o aumento del tamaño de la caja. */
+    object-fit: cover; /* Sirve para mantener la imagen fija, sin ser afectada por la reducción o aumento del tamaño de la caja de la imagen. */
     object-position: 20% 10%; /* Sirve para ajustar el area de la imagen a recortar. La propiedad object-position requiere de dos valores: x% y y% para manipular la imagen (la posicion predeterminada es de 50% 50%). Tambien podemos proporcionar posiciones de pixeles: xpx e ypx, pero eso generalmente no es útil. */
     border: 5px solid black;
-    }
+}
