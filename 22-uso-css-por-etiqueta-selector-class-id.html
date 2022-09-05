@@ -137,13 +137,35 @@
         <article>
             <section>
                 <div>
+                    <h4>Nota: Dato importante</h4>
                     <p>Cuando se quiera incrustar una ruta <b>estatica interna</b>, ya sea de una imagen, video, página o cualquier tipo de archivo, la ruta se tiene que declarar primero con un punto (<b>.</b>), seguido de un slash (<b>/</b>), (<b>./ruta</b>); así se está informando al sistema, que la ruta declarada inicia desde el directorio actual.<br/>Esta acción hace parte de las buenas prácticas, de lo contrario se tendrá problemas al subir el proyecto a un repositorio o al hacer un deploy.</p> 
+                </div>
+                <div>
+                    <h4>Propiedades extras:</h4>
+                    <dl>
+                        <dt><b>object-fit: cover;</b> (IMAGEN)</dt>
+                        <dd>Sirve para mantener una imagen fija, sin ser afectada por la reducción o aumento del tamaño de la caja de la imagen.</dd>
+                        <dt><b>object-position: x% y%</b></dt>
+                        <dd>Sirve para ajustar el area de la imagen a recortar. La propiedad <b>object-position</b> requiere de dos valores: x% y y% para manipular la posición de la imagen (la posición predeterminada es de 50% 50%). También podemos proporcionar pixeles: xpx e ypx, pero eso generalmente no es útil.</dd>
+                    </dl>
+                    <dl>
+                        <dt><b>inline</b></dt>
+                        <dd>Para medir el ancho de una caja.</dd>
+                        <dt><b>block</b></dt>
+                        <dd>Para medir la altura de una caja.</dd>
+                    </dl>
+                    <dl>
+                        <dt><b>start</b></dt>
+                        <dd>Define el lado <b>izquierdo</b> y <b>superior</b> de la caja.</dd>
+                        <dt><b>end</b></dt>
+                        <dd>Define el lado <b>derecho</b> e <b>inferior</b> de la caja.</dd>
+                    </dl>
                 </div>
             </section>
         </article>
     </main>
     <footer>
-        <p>Ruta de estudios: Platzi.com<br/>Fuentes: Platzi.com - Stackoverflow.com - losapuntesdemajo.vercel.app - developer.mozilla.org - delftstack.com</p>
+        <p>Ruta de estudios: Platzi.com & losapuntesdemajo.vercel.app<br/>Fuentes: <a href="https://platzi.com/clases/2008-html-css/31073-como-utilizamos-css-por-etiqueta-selector-class-y-/">Platzi.com</a> - Stackoverflow.com: <a href="https://es.stackoverflow.com/questions/159353/funciona-realmente-especificar-un-margin-y-un-padding-a-0-inicialmente" target="_blank">1</a>, <a href="https://stackoverflow.com/questions/1714096/is-the-css-star-selector-considered-harmful-and-why" target="_blank">2</a>, <a href="https://es.stackoverflow.com/questions/86603/es-recomendable-establecer-el-margin-y-el-padding-a-0-en-el-documento-css-de-mi" target="_blank">3</a> - <a href="https://drive.google.com/file/d/1WqIw3tPS6gNhEnma7iHl-PEfByKSIYGK/view" target="_blank">losapuntesdemajo.vercel.app</a> - developer.mozilla.org: (<a href="https://developer.mozilla.org/es/docs/Web/CSS/border-style">border-style</a>) (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius">border-radius</a>) - <a href="https://www.delftstack.com/es/howto/html/html-crop-image/">delftstack.com</a> - <a href="https://lenguajecss.com/css/modelo-de-cajas/propiedades-logicas-css/">lenguajecss.com</a></p>
     </footer>
 </body>
 </html>
