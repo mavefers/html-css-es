@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index/index.css">
     <title>Index - Indice principal de la web</title>
 </head>
 <body>
@@ -11,36 +12,30 @@
         <h1>Index</h1>
     </header>
     <main>
-        <section>
-            <article>
+        <article>
+            <section>
                 <div>
                     <h3>Existen tres estándares importantes para generar productos web. Estos son los lenguajes o estándares que entiende todo navegador web:</h3>
                     <ul>
                         <li><b>HTML</b></li>
-                        <li>
-                            CSS
-                        </li>
-                        <li>
-                            JavaScript
-                        </li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
                     </ul>
-                    <br/>
                     <h3>HTML</h3>
                     <p>
                         Estructura de los documentos que se visualizan en los navegadores (Chrome, Edge, Firefox, Safari, Opera, entre otros). Es el lenguaje con el que clasificamos o etiquetamos cada parte del documento, dejándole saber al navegador qué información va a visualizar y qué valor tiene para nosotros. De esa manera, presentamos: Barras de Navegación, Secciones, artículos, listas, títulos de diferentes tamaños, audios, videos, imágenes, entre otros.
                     </p>
                     <h3>CSS</h3>
-                    <p>
-                        Es el lenguaje con el que le damos estilos a todo el contenido previamente etiquetado con HTML. Es el encargado o usado para darle todo el aspecto visual de manera profesional, usando estándares de diseño de documentos y logrando así la correcta visualización de textos y recursos audiovisuales en formatos digitales o, en nuestro caso, las páginas web.
+                    <p>Es el lenguaje con el que le damos estilos a todo el contenido previamente etiquetado con HTML. Es el encargado o usado para darle todo el aspecto visual de manera profesional, usando estándares de diseño de documentos y logrando así la correcta visualización de textos y recursos audiovisuales en formatos digitales o, en nuestro caso, las páginas web.
                     </p>
                     <h3>JavaScript</h2>
                     <p>
                         Es lenguaje que se emplea para crear o brindar a las páginas web la capacidad de interactuar con el usuario y los recursos asociados a una página web, como lo son: bases de datos, servidores de diversa índole, información derivada de la interacción de cada página en sí.
                     </p>
                 </div>
-            </article>
+            </section>
             <br/>
-            <article>
+            <section>
                 <div>
                     <h2>Index</h2>
                     <ol>
@@ -82,8 +77,49 @@
                         <dd><b>Ctrl</b> + <b>/</b></dd><br/>
                     </dl>
                 </div>
-            </article>
-        </section>
-    </main>
+                <div>
+                    <h3>Dato puntual:</h3>
+                    <dl>
+                        <dt>elemento</dt>
+                        <dd>Ejemplo: <b>h2</b></dd><br/>
+                        <dt>etiqueta</dt>
+                        <dd><b>< h2 ></b> ... <b>< / h2 ></b></dd><br/>
+                        <dt>Nombres de archivos CSS</dt>
+                        <dd>Casi siempre es <b>main.css</b> o <b>style.css</b><br/>Sin embargo, cuando se manejan proyectos más grandes, de más páginas/pantallas, casi siempre será un archivo de CSS por página, y llevará el nombre de la página.</dd>
+                        <dt>Textos dentro de <b>< span > < / span ></b></dt>
+                        <dd>Cuando el texto está acompañado de un elemento, <b>inline</b>, lo correcto es aislar al text, dentro del elemento <b>span</b>.</dd>
+                    </dl>
+                </div>
+            </section>
+        </article>
+        <article>
+            <section>
+                <div class="temas">
+                    <h3 class="temas__titulo">Metodología BEM (CSS)</h3>
+                    <p class="temas__def">Es un conjunto de reglas que nos proponen a nosotros, para crear un código mucho más limpio y organizado. Esto nos sirve cuando tenemos proyectos más grandes y empezampoos a tener mucho código.<br/>BEM nos permite reutilizar código, poder mover componentes de un proyecto a otro, mantener los estilos de un forma fácil y crear código fácil de entender.</p>
+                    <h4>Tipos de elementos BEM</h4>
+                    <p>Tenemos 3 tipo de elementos en BEM: Block/Bloques, Elementos, Modificadores.</p>
+                    <div class="bloquedef">
+                        <dl class="bloquedef__list">
+                            <dt class="bloquedef__title">Bloques</dt>
+                            <dd class="bloquedef__def">Van a ser los compenentes de nuestro sitio que queremos poder reutilizar en alguna otra parte de nuestra página.<br/>Son bloques de codigo reutilizables, que se pueden usar en otra parte de la pagina o incluso en otro proyecto.<br/>Ejemplos: Pueden ser <b>botones</b>, <b>tarjetas que incluyan variedad de elementos</b>, <b>division de articulos</b>, etc.</dd>
+                        </dl>
+                        <ul>
+                            <li class="block__extracto-1">Las reglas de BEM nos indican que, como nombre de la <b>class</b>e del bloque, se puede poner cualquier cosa descriptiva que queramos, y para los nombres de los elementos hijos, inicia el nombre del elemento padre, seguido de dos guion bajo y el nombre descriptivo del elemento, "<b>nombreDelBloque__nombre-delElemento</b>"</li>
+                            <li class="block__extracto-2">Puede haber un bloque dentro de otro bloque. <b>Importante:</b> Solo debe servir para darle los estilos básicos a nuestro componente.</li>
+                        </ul>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="bloquedef">
+                        <dl class="bloquedef__list">
+                            <dt class="bloquedef__title">Modificadores</dt>
+                            <dd class="bloquedef__def">Funcionan como un <b>id</b></dd>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main> 
 </body>
 </html>
