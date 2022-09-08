@@ -13,11 +13,19 @@ input:focus {
     background-color: rgb(255, 242, 0);
 }
 
-/* Aquí se está combinando "Pseudo-classe" (:hover) con "Pseudo elemento" (::first-line) */
+#dt-pc::first-line {
+    color:rgb(255, 145, 0);
+    background-color:black;
+}
+
+/* Aquí se está combinando "Pseudo-classe" (:hover) con "Pseudo elemento" (::first-line), primero se tienen que poner las pseudo-classes, luego los pseudo-elementos */
 #p-def-pc:hover::first-line {
     color:blueviolet;
 }
 
+#span-pc-dt {
+    font-weight: bold;
+}
 
 /* Los pseudo elementos funcionan similarmente a las Pseudo-classes, pero en cambio, no funcionan con un estado especial, sino que, permiten a;adir estilos a una parte concreta del documento o elemento seleccionado. */
 
@@ -26,6 +34,7 @@ input:focus {
     background-color:slateblue;
     color: white;
     font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #span-div2 {
