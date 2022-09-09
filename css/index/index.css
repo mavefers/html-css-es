@@ -7,3 +7,14 @@ body {
 a {
     color:rgb(255, 167, 167);
 }
+.bloquedef__texto-resaltado {
+    color: rgb(254, 248, 161);
+}
+.bloquedef--bold {
+    font-weight: bold;
+}
+
+.bloquedef__title {
+    text-decoration: underline;
+    font-weight: 600;
+}
