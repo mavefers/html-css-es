@@ -1,12 +1,25 @@
 body {
-    font-size: 150%;
+    font-size: 130%;
     margin-inline: 2%;
     color:rgb(255, 255, 255);
     background-color: rgb(0, 44, 82);
 }
 a {
     color:rgb(255, 167, 167);
+    text-decoration-line: none;
+    /* (text-decoration-line) Sirve para establecer el tipo de decoración de línea que se agregará a un elemento texto, estos pueden ser: subrayado (underline) - suprarrayado (overline) - tachado (line-through) - parpadeo (blink) . Sirve para quitar todo tipo de decoración al texto */
 }
+.index__li:hover {
+    color: rgb(255, 0, 0);
+}
+.index__link:hover {
+    color:rgb(255, 0, 0);
+    background-color:rgb(198, 228, 255);
+    font-size:larger;
+    font-weight: bolder;
+}
+
+
 .bloquedef__texto-resaltado {
     color: rgb(254, 248, 161);
 }
@@ -15,7 +28,7 @@ a {
 }
 
 .bloquedef__title {
-    text-decoration: underline;
+    text-decoration-line: underline;
     font-weight: 600;
     color:rgb(214, 237, 255)
 }
@@ -44,11 +57,11 @@ a {
 .images__img {
     border-radius: 30px;
 }
-.images__descripcion {
+.images__description {
     margin-inline: 20px;
     padding: 10px;
     font-size: larger;
 }
-.images__descripcion:hover::first-line {
-    color: rgb(253, 170, 170);
+.images__description--firstline::first-line {
+    color: rgb(255, 210, 210);
 }
