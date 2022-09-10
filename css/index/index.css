@@ -17,4 +17,38 @@ a {
 .bloquedef__title {
     text-decoration: underline;
     font-weight: 600;
+    color:rgb(214, 237, 255)
+}
+.temas__bloquedef {
+    padding-inline: 20px;
+    padding-block: 3px;
+    margin-inline: 23px;
+    border-radius: 35px;
+    border:10px solid rgb(97, 25, 25);
+    
+    background-color:rgb(0, 98, 147);
+}
+.temas__titulo {
+    margin-block-end: 10px;
+}
+.temas__def {
+    margin-block-start: 5px;
+}
+.images {
+    padding-block: 10px;
+}
+.images__bloque {
+    display: flex;
+    align-items: center;
+}
+.images__img {
+    border-radius: 30px;
+}
+.images__descripcion {
+    margin-inline: 20px;
+    padding: 10px;
+    font-size: larger;
+}
+.images__descripcion:hover::first-line {
+    color: rgb(253, 170, 170);
 }
