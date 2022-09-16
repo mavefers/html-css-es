@@ -102,4 +102,28 @@ input:focus {
     color: #cabf9e;
 }
 
+.ejm-img__title {
+    margin-inline-start: 10%;
+}
+.ejm-img__contenido {
+    text-align:center;
+    margin: auto;
+}
+
+.ejm-img__img {
+    width: 50%; /* 440px */ /* La propiedad width siempre tiene que ir seguida de una propiedad height, para que pueda moldead manualmente ambos lados. */
+    /* height: 109%; */ /* 319px */
+    min-width: 440px;
+    min-height: 319px;
+}
+.ejm-img__pie-texto {
+    font-size:smaller;
+}
+.ejm-img__pie-link {
+    text-decoration-line: none;
+    font-weight: bolder;
+}
+.ejm-img__pie-link--gold {
+    color:#c2a25d;
+}
 /* "Shorthand property": (Propiedad abreviada): Las propiedades solas o independientes, sirven para generar bloques; y cuando queramos crear modificadores, podemos alterar los estilos utilizando propiedades deribadas, como por ejemplo: 'border' para crear bloques, y 'border-color' para generar modificadores.  */
