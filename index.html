@@ -29,9 +29,7 @@
                     <p>Es el lenguaje con el que le damos estilos a todo el contenido previamente etiquetado con HTML. Es el encargado o usado para darle todo el aspecto visual de manera profesional, usando estándares de diseño de documentos y logrando así la correcta visualización de textos y recursos audiovisuales en formatos digitales o, en nuestro caso, las páginas web.
                     </p>
                     <h3>JavaScript</h2>
-                    <p>
-                        Es lenguaje que se emplea para crear o brindar a las páginas web la capacidad de interactuar con el usuario y los recursos asociados a una página web, como lo son: bases de datos, servidores de diversa índole, información derivada de la interacción de cada página en sí.
-                    </p>
+                    <p>Es lenguaje que se emplea para crear o brindar a las páginas web la capacidad de interactuar con el usuario y los recursos asociados a una página web, como lo son: bases de datos, servidores de diversa índole, información derivada de la interacción de cada página en sí.</p>
                 </div>
             </section>
             <br/>
@@ -96,7 +94,7 @@
             <section>
                 <div class="temas">
                     <h3 class="temas__titulo">Metodología BEM (CSS)</h3>
-                    <p class="temas__def">Es un conjunto de reglas que nos proponen a nosotros, para crear un código mucho más limpio y organizado. Esto nos sirve cuando tenemos proyectos más grandes y empezampoos a tener mucho código.<br/>BEM nos permite reutilizar código, poder mover componentes de un proyecto a otro, mantener los estilos de un forma fácil y crear código fácil de entender.<br/><span class="bloquedef__texto-resaltado bloquedef--bold">Los Containers almacenan Bloques (Blocks).</span></p>
+                    <p class="temas__def">Es un conjunto de reglas que nos proponen a nosotros, para crear un código mucho más limpio y organizado. Esto nos sirve cuando tenemos proyectos más grandes y empezampoos a tener mucho código.<br/>BEM nos permite reutilizar código, poder mover componentes de un proyecto a otro, mantener los estilos de un forma fácil y crear código fácil de entender.<br/><span class="bloquedef__texto-resaltado bloquedef_texto--bold">Los Containers almacenan Bloques (Blocks).</span><br/>BEM trabaja con la especificidad, y no se debe usar ningún <span>id</span>, solo se deben usar puras <span>classes</span>.</p>
                     <h4>Tipos de elementos BEM</h4>
                     <p>Tenemos 3 tipo de elementos en BEM: Block/Bloques, Elementos, Modificadores.</p>
                     <div class="temas__bloquedef">
@@ -109,18 +107,18 @@
                         <div class="bloquedef">
                             <dl class="bloquedef__list">
                                 <dt class="bloquedef__title">Bloques</dt>
-                                <dd class="bloquedef__def"><span class="bloquedef__texto-resaltado">Sirve para darle estilos básicos a nuestros componentes,</span> como el tamaño, el tipo de fuente la posición, etc; como el esqueleto del diseño, como el diseño principal. Van a ser los compenentes de nuestro sitio que queremos reutilizar en alguna otra parte de nuestra página.<br/>Son bloques de codigo reutilizables, que se pueden usar en otra parte de la pagina o incluso en otro proyecto.<br/>Ejemplos: Pueden ser <b>botones</b>, <b>tarjetas que incluyan variedad de elementos</b>, <b>division de articulos</b>, etc.</dd>
+                                <dd class="bloquedef__def"><span class="extracto__texto-resaltado">Sirve para darle estilos básicos a nuestros componentes,</span> como el tamaño, el tipo de fuente la posición, etc; como el esqueleto del diseño, como el diseño principal. Van a ser los compenentes de nuestro sitio que queremos reutilizar en alguna otra parte de nuestra página.<br/>Son bloques de codigo reutilizables, que se pueden usar en otra parte de la pagina o incluso en otro proyecto.<br/>Ejemplos: Pueden ser <b>botones</b>, <b>tarjetas que incluyan variedad de elementos</b>, <b>division de articulos</b>, etc.</dd>
                             </dl>
                             <ul>
-                                <li class="bloquedef__extracto-1">Las reglas de BEM nos indican que, <span class="bloquedef__texto-resaltado bloquedef--bold">como nombre</span> de la <b>class</b>e del bloque, <span class="bloquedef__texto-resaltado bloquedef--bold">se puede poner cualquier cosa descriptiva que queramos</span>, y para los nombres de los elementos hijos, inicia el nombre del elemento padre, seguido de dos guion bajo y el nombre descriptivo del elemento, "<b>nombreDelBloque__nombre-delElemento</b>"</li>
-                                <li class="bloquedef__extracto-2">Puede haber un bloque dentro de otro bloque. <span class="bloquedef__texto-resaltado"><b>Importante:</b> Solo debe servir para darle los estilos básicos a nuestro componente.</span></li>
-                                <li class="bloquedef__extracto-2">Se puede agregar cualquier cantidad de bloques, dentro de un contenedor.</li>
+                                <li class="bloquedef__extracto">Las reglas de BEM nos indican que, <span class="extracto__texto-resaltado extracto--bold">como nombre</span> de la <b>class</b>e del bloque, <span class="extracto__texto-resaltado extracto--bold">se puede poner cualquier texto descriptivo que queramos</span>, y para los nombres de los elementos hijos, inicia el nombre del elemento padre, seguido de dos guion bajo y el nombre descriptivo del elemento, "<b>nombreDelBloque__nombre-delElemento</b>"</li>
+                                <li class="bloquedef__extracto">Puede haber un bloque dentro de otro bloque. <span class="extracto__texto-resaltado"><b>Importante:</b> Solo debe servir para darle los estilos básicos a nuestro componente.</span></li>
+                                <li class="bloquedef__extracto">Se puede agregar cualquier cantidad de bloques, dentro de un contenedor.</li>
                             </ul>
                         </div>
                         <div class="bloquedef">
                             <dl class="bloquedef__list">
                                 <dt class="bloquedef__title">Modificadores</dt>
-                                <dd class="bloquedef__def">Modifican los bloques para agregarle un estilo único. <span class="bloquedef__texto-resaltado">Sirven para agregar estilos que añaden ciertos cambios que ayudan a diferenciar al modificador de los otros bloques y modificadores.</span> Son classes que derivan de los bloques que <span class="bloquedef__texto-resaltado bloquedef--bold">funcionan como un <b>id</b></span>.<br/>La sintaxis de un modificador es: El nombre del bloque, doble guión (--) y el nombre del modificador; "<b>nombreDelBloque--nombre-DelModificador</b>".</dd>
+                                <dd class="bloquedef__def">Modifican los bloques para agregarle un estilo único. <span class="extracto__texto-resaltado">Sirven para agregar estilos que añaden ciertos cambios que ayudan a diferenciar al modificador de los otros bloques y modificadores.</span> Son classes que derivan de los bloques que <span class="bloquedef__texto-resaltado bloquedef--bold">funcionan como un <b>id</b></span>.<br/>La sintaxis de un modificador es: El nombre del bloque, doble guión (--) y el nombre del modificador; "<b>nombreDelBloque--nombre-DelModificador</b>".</dd>
                             </dl>
                         </div>
                         <div class="bloquedef__images">
