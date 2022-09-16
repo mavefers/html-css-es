@@ -13,7 +13,7 @@ a {
     color: rgb(255, 0, 0);
 }
 .index__link:hover {
-    color:rgb(255, 0, 0);
+    color:rgb(111, 0, 0);
     background-color:rgb(198, 228, 255);
     font-size:larger;
     font-weight: bolder;
