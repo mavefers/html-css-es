@@ -6,45 +6,41 @@ body {
 /* Especifica un estado especial del elemento seleccionado, para que recién se aplique el estilo.
 Por ejemplo, se aplicará un estilo, solo cuando el usuario haga "hover" sobre el elemento seleccionado.
 Es como decir: Si ocurre esta acción, se aplicará este estilo. */
-#p-def-pc2:hover {
+.pseclass__extra--green:hover {
     background-color: chartreuse;
 }
-input:focus {
+.pseclass__boton--yellow/* input:focus */ {
     background-color: rgb(255, 242, 0);
 }
 
-#dt-pc::first-line {
+.pseclass__ejm-def--color-hllwn::first-line {
     color:rgb(255, 145, 0);
     background-color:black;
 }
 
 /* Aquí se está combinando "Pseudo-classe" (:hover) con "Pseudo elemento" (::first-line), primero se tienen que poner las pseudo-classes, luego los pseudo-elementos */
-#p-def-pc:hover::first-line {
+.pseclass__def--firstline-violet:hover::first-line {
     color:blueviolet;
 }
 
-#span-pc-dt {
+.pseclass__spanbold {
     font-weight: bold;
 }
 
 /* Los pseudo elementos funcionan similarmente a las Pseudo-classes, pero en cambio, no funcionan con un estado especial, sino que, permiten a;adir estilos a una parte concreta del documento o elemento seleccionado. */
 
 /* Pseudo elemento (::first-letter), sirve para añadir estilo a la primera letra del elemento seleccionado. */
-#p-div2::first-letter {
+.pseclass__ejm-extra::first-letter {
     background-color:slateblue;
     color: white;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
 }
-
-#span-div2 {
-    font-weight: bold;
-}
-#span-pc-link {
+.pseclass__ejm-texto--red {
     color:red;
     font-weight: bold;
 }
-#span-pc-hover {
+.pseclass__ejm-hover--blue:hover {
     color: blue;
     font-weight: bold;
 }
@@ -114,7 +110,6 @@ input:focus {
     width: 50%; /* 440px */ /* La propiedad width siempre tiene que ir seguida de una propiedad height, para que pueda moldead manualmente ambos lados. */
     /* height: 109%; */ /* 319px */
     min-width: 440px;
-    min-height: 319px;
 }
 .ejm-img__pie-texto {
     font-size:smaller;
