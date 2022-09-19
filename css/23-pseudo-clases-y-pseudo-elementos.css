@@ -1,0 +1,128 @@
+body {
+    font-size: 150%;
+}
+
+
+/* Especifica un estado especial del elemento seleccionado, para que recién se aplique el estilo.
+Por ejemplo, se aplicará un estilo, solo cuando el usuario haga "hover" sobre el elemento seleccionado.
+Es como decir: Si ocurre esta acción, se aplicará este estilo. */
+.pseclass__extra--green:hover {
+    background-color: chartreuse;
+}
+.pseclass__boton--yellow/* input:focus */ {
+    background-color: rgb(255, 242, 0);
+}
+
+.pseclass__ejm-def--color-hllwn::first-line {
+    color:rgb(255, 145, 0);
+    background-color:black;
+}
+
+/* Aquí se está combinando "Pseudo-classe" (:hover) con "Pseudo elemento" (::first-line), primero se tienen que poner las pseudo-classes, luego los pseudo-elementos */
+.pseclass__def--firstline-violet:hover::first-line {
+    color:blueviolet;
+}
+
+.pseclass__spanbold {
+    font-weight: bold;
+}
+
+/* Los pseudo elementos funcionan similarmente a las Pseudo-classes, pero en cambio, no funcionan con un estado especial, sino que, permiten a;adir estilos a una parte concreta del documento o elemento seleccionado. */
+
+/* Pseudo elemento (::first-letter), sirve para añadir estilo a la primera letra del elemento seleccionado. */
+.pseclass__ejm-extra::first-letter {
+    background-color:slateblue;
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.pseclass__ejm-texto--red {
+    color:red;
+    font-weight: bold;
+}
+.pseclass__ejm-hover--blue:hover {
+    color: blue;
+    font-weight: bold;
+}
+.list-def {
+    padding-block-start: 0px;
+    padding-block-end: 18px;
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+    margin-inline: 80px; /* Para determinar los espacios de los costados */
+    border: 10px solid;
+    border-radius: 30px;
+}
+.list-def--border-ridge {
+    border-style: ridge;
+}
+.list-def--border-double {
+    border-style: double;
+}
+.list-def--border-gold {
+    border-color: #c2a25d;
+}
+.list-def--background-green {
+    background-color: #053426;
+}
+.list-def--background-navyblue {
+    background-color:rgb(0, 66, 128);
+}
+.list-def__title {
+    padding-block-start: 5px;
+    padding-block-end: 7px;
+    padding-inline-start: 5px;
+    font-weight: bold;
+    border: 7px solid;
+    border-radius: 15px 15px 50px 0px;
+    margin-block-start: 0px;
+    margin-block-end: 8px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.list-def__title--background-golden {
+    border-color:#c2a25d; /* ex (#cab577) */
+    background-color:#c2a25d; /* ex (#cab577) */
+}
+.list-def__title--text-green {
+    color: #053426;
+}
+.list-def__title--text-blue {
+    color: rgb(0, 66, 128);
+}
+.list-def__extracto {
+    margin-inline-start: 55px;
+    margin-inline-end: 55px;
+}
+.list-def__extracto--text-golden {
+    color: #cabf9e;
+}
+
+.ejm-img__title {
+    margin-inline-start: 10%;
+}
+.ejm-img__contenido {
+    text-align:center;
+    margin: auto;
+}
+
+.ejm-img__img {
+    width: 50%; /* 440px */ /* La propiedad width siempre tiene que ir seguida de una propiedad height, para que pueda moldead manualmente ambos lados. */
+    /* height: 109%; */ /* 319px */
+    min-width: 440px;
+}
+.ejm-img__pie-texto {
+    font-size:smaller;
+}
+.ejm-img__pie-link {
+    text-decoration-line: none;
+    font-weight: bolder;
+}
+.ejm-img__pie-link--gold {
+    color:#c2a25d;
+}
+/* "Shorthand property": (Propiedad abreviada): Las propiedades solas o independientes, sirven para generar bloques; y cuando queramos crear modificadores, podemos alterar los estilos utilizando propiedades deribadas, como por ejemplo: 'border' para crear bloques, y 'border-color' para generar modificadores.  */
+
+selector:first-of-type { /* Se seleccionará al elemento que sea el PRIMER HERMANO de un grupo de elementos iguales. Los primeros hijos de su tipo, dentro de su propio nivel de hermanos. */
+    background-color:rgb(98, 98, 98);
+}
