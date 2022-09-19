@@ -1,0 +1,95 @@
+/* Para hacer comentarios automáticos en una linea de código: (Ctrl + /)  */
+
+/* SELECTORES: * (universal)  - etiqueta - .class - #id */
+
+/* Selector universal (*), selecciona todos los elementos del HTML
+
+* {
+    margin: 0;
+}
+
+*/
+
+
+/* elemento */
+span {
+    color:rgb(9, 0, 179);
+}
+body {
+    font-size: 150%;
+    background-color:rgb(224, 207, 255);
+    margin-inline: 2%;
+}
+
+/* class - Selectores de clase: Es la forma más común de aplicar estilos. Inicia con un punto (.)
+Para que los selectores de clase funcionen, y podamos asociar los estilos de esa clase a algún elemento, simplemente debemos agregar el atributo 'class' a ese elemento.
+*/
+.textos {
+    color: red;
+}
+
+/* En HTML es posible agregar más de una clase a un elemento */
+
+/* id -  */
+#texto1 {
+    color:rgb(3, 97, 0);
+}
+
+/* ----- */
+dd {
+    margin-inline-start:1.3%;
+}
+
+.li-title-3-tipos-de-css {
+    color: rgb(82, 0, 0);
+}
+.h4-title {
+    margin-block-end:0.5%;
+    padding-block-start:10px;
+}
+#title-dates {
+    margin-block-start: 5%;
+    margin-inline-start: 5%;
+}
+#figure-css-anatomy {
+    margin-inline: 400px;
+}
+#img-css-anatomy {
+    border-radius: 0px 100px / 120px;
+    border-color: rgb(82, 0, 215);
+    border-style: inset;
+    border-width: 5px;
+}
+#fig-css-anatomy {
+    margin-inline: 10%;
+}
+#img-models {
+    width: 1024px;
+    height: 570px;
+    object-fit: cover;
+    object-position: 50% 46%;
+}
+#fig-models {
+    margin-inline: 10%;
+}
+
+#figure-models {
+    padding: 0px;
+    border: 0px;
+    margin-inline:247px;
+}
+
+
+.cropped1 {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover;
+    border: 5px solid black;
+    }
+.cropped2 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Sirve para mantener la imagen fija, sin ser afectada por la reducción o aumento del tamaño de la caja de la imagen. */
+    object-position: 20% 10%; /* Sirve para ajustar el area de la imagen a recortar. La propiedad object-position requiere de dos valores: x% y y% para manipular la imagen (la posicion predeterminada es de 50% 50%). Tambien podemos proporcionar posiciones de pixeles: xpx e ypx, pero eso generalmente no es útil. */
+    border: 5px solid black;
+}
