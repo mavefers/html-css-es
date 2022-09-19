@@ -1,0 +1,51 @@
+body {
+    background-color: bisque;
+    font-size: 150%;
+}
+h1 {
+    color: rgb(21, 103, 0);
+}
+.li-frutas {
+    display: inline-block;
+    margin-right: 10%;
+}
+
+.figure-imagen-manzana {
+    margin: auto;
+}
+.imagen-manzana {
+    width: 280px;
+    height: 190px;
+    border-end-end-radius: 15%;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: red grey;
+}
+.imagen-pie {
+    width: 280px;
+    height: 190px;
+    border-radius: 15%;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: red blue blueviolet whitesmoke;
+}
+
+.figure-imagen-fresa {
+    margin: auto;
+}
+.imagen-fresa {
+    width: 280px;
+    height: 190px;
+    border-end-start-radius: 15%;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: #8cb300;
+}
+.imagen-milkshake {
+    width: 280px;
+    height: 190px;
+    border-radius: 25px;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: red blue;
+}
