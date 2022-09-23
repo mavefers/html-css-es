@@ -126,3 +126,33 @@ Es como decir: Si ocurre esta acción, se aplicará este estilo. */
 selector:first-of-type { /* Se seleccionará al elemento que sea el PRIMER HERMANO de un grupo de elementos iguales. Los primeros hijos de su tipo, dentro de su propio nivel de hermanos. */
     background-color:rgb(98, 98, 98);
 }
+
+
+/*  */
+
+.box {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+}
+.bax {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid blue;
+}
+
+.box:nth-of-type(#) {
+    background-color: purple;
+}
+.box:nth-child(4) {
+    background-color: grey;
+}
+.box:last-child {
+    background-color:rgb(255, 242, 0);
+}
+
+.box:nth-child(6) {
+    background-color:#053426;
+}
