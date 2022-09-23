@@ -156,3 +156,8 @@ selector:first-of-type { /* Se seleccionará al elemento que sea el PRIMER HERMA
 .box:nth-child(6) {
     background-color:#053426;
 }
+/* - */
+
+.abc:last-of-type {
+    background-color: blue;
+}
