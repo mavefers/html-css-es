@@ -39,7 +39,7 @@
                         </dl>
                         <dl class="list-def list-def--background-navyblue list-def--border-gold list-def--border-double"> <!-- bloque -->
                             <dt class="list-def__title list-def__title--background-golden list-def__title--text-blue">:first-child</dt> <!-- se enfocará todos los *PRIMEROS* HIJOS de ese elemento padre o de ese contenedor que hemos seleccionado. Si el selector declarado NO ES PRIMER HIJO, NO SELECCIONARÁ NADA. -->
-                            <dd class="list-def__extracto list-def__extracto--text-golden"><span>Sirve para seleccionar el elemento PRIMER HERMANO, de la línea jerárquica de hermanos, del tipo de selector que hemos declarado en la ReglaCSS. Si el primer hermano, de la línea jerárquica de hermanos, no lleva el mismo tipo de selector o mismo tipo de elemento que hemos declarado en la ReglaCSS, no se aplicará el estilo; así no sea del mismo tipo, son "hermanos", ya que están en la misma línea jerárquica de hermanos, sin importar si no es del miso tipo, también cuenta, pero no se le aplicará el estilo.</span>
+                            <dd class="list-def__extracto list-def__extracto--text-golden"><span>Sirve para seleccionar el elemento PRIMER HERMANO, del primer puesto de la línea jerárquica de hermanos, del tipo de selector que hemos declarado en la ReglaCSS. Si el primer hermano, de la línea jerárquica de hermanos, no lleva el mismo tipo de selector o mismo tipo de elemento que hemos declarado en la ReglaCSS, no se aplicará el estilo, así no sea del mismo tipo, son "hermanos", ya que están en la misma línea jerárquica de hermanos, sin importar si no es del mismo tipo, también cuenta, pero no se le aplicará el estilo.</span><br/><span>Ese nivel jerárquico cuenta porque por dentro existe un elemento que concuerda con la ReglaCSS que hemos declarado, junto con la pseudo-classe :first-child pero, si el elemento que concuerda no es primero (primer hermano), no se aplicaría ningún estilo.</span>
                                 <div class="ejm-img">
                                     <span class="ejm-img__title">Ejemplo:</span>
                                     <figure class="ejm-img__contenido">
@@ -51,7 +51,7 @@
                         </dl>
                         <dl class="list-def list-def--background-navyblue list-def--border-gold list-def--border-double"> <!-- bloque -->
                             <dt class="list-def__title list-def__title--background-golden list-def__title--text-blue">:last-child</dt>
-                            <dd class="list-def__extracto list-def__extracto--text-golden"><span>Funciona similar a :first-child, pero en vez de seleccionar los primeros, seleccionará los últimos.</span><br/><span>Sirve para seleccionar el elemento ÚLTIMO HERMANO, de la línea jerárquica de hermanos, del tipo de selector que hemos declarado en la ReglaCSS. Si el último hermano, de la línea jerárquica de hermanos, no lleva el mismo tipo de selector o mismo tipo de elemento que hemos declarado en la ReglaCSS, no se aplicará el estilo; así no sea del mismo tipo, son "hermanos", ya que están en la misma línea jerárquica de hermanos, sin importar si no es del miso tipo, también cuenta, pero no se le aplicará el estilo.</span>
+                            <dd class="list-def__extracto list-def__extracto--text-golden"><span>Funciona similar a :first-child, pero en vez de seleccionar los primeros, seleccionará los últimos.</span><br/><span>Sirve para seleccionar el elemento ÚLTIMO HERMANO, de la línea jerárquica de hermanos, del tipo de selector que hemos declarado en la ReglaCSS. Si el último hermano, de la línea jerárquica de hermanos, no lleva el mismo tipo de selector o mismo tipo de elemento que hemos declarado en la ReglaCSS, no se aplicará el estilo, así no sea del mismo tipo, son "hermanos", ya que están en la misma línea jerárquica de hermanos, sin importar si no es del miso tipo, también cuenta, pero no se le aplicará el estilo.</span>
                                 <div class="ejm-img">
                                     <span class="ejm-img__title">Ejemplo:</span>
                                     <figure class="ejm-img__contenido">
@@ -63,7 +63,7 @@
                         </dl>
                         <dl class="list-def list-def--background-navyblue list-def--border-gold list-def--border-double"> <!-- bloque -->
                             <dt class="list-def__title list-def__title--background-golden list-def__title--text-blue">:first-of-type</dt>
-                            <dd class="list-def__extracto list-def__extracto--text-golden"><span>Se seleccionará al elemento que sea el PRIMER HERMANO de un grupo de elementos iguales. Los primeros hijos de su tipo, dentro de su propio nivel de hermanos, no importa en dónde estén, todos cuentan.</span><br/><span>first-of-type cuenta a todos los selectores que sean del mismo tipo, que estén declarados en todo el documento CSS, sin importar la jerarquía, o sea sin importar que algunos estén en la posición de padres, hijos, abuelos, o en cualquier otro espacio; lo que importa es el nivel en el que es declarado dentro del orden de CASCADA, de arriba hacia abajo.</span><br/>
+                            <dd class="list-def__extracto list-def__extracto--text-golden"><span>Se seleccionará al elemento que sea el PRIMER HERMANO de un grupo de elementos iguales. Los primeros hermanos de su tipo, dentro de su propio nivel de hermanos, no importa en dónde estén, todos cuentan.</span><br/><span>Todos los niveles de jerarquía cuentan, si existe un elemento que concuerde por dentro.</span><br/><span>first-of-type cuenta a todos los selectores que sean del mismo tipo de selector, todos los que se encuentren declarados en todo el documento CSS, sin importar la jerarquía, o sea sin importar que algunos estén en la posición de padres, hijos, abuelos, o en cualquier otro espacio, tampoco importa que no sea el primer elemento hermano declarado en su nivel jerárquico, lo que importa es que tenga el mismo tipo de selector, y que se respete el orden de CASCADA en donde está declarado, de arriba hacia abajo.</span><br/>
                                 <div class="ejm-img">
                                     <span class="ejm-img__title">Ejemplo:</span>
                                     <figure class="ejm-img__contenido">
@@ -75,7 +75,7 @@
                         </dl>
                         <dl class="list-def list-def--background-navyblue list-def--border-gold list-def--border-double"> <!-- bloque -->
                             <dt class="list-def__title list-def__title--background-golden list-def__title--text-blue">:last-of-type</dt>
-                            <dd class="list-def__extracto list-def__extracto--text-golden"><span>Funciona similar a :first-of-type, pero en vez de seleccionar los primero, seleccionará a los últimos.</span><br/><span>last-of-type cuenta a todos los selectores que sean del mismo tipo, que estén declarados en todo el documento CSS, sin importar la jerarquía, o sea sin importar que algunos estén en la posición de padres, otros en hijos, abuelos, o en cualquier otro espacio; lo que importa es el nivel en el que es declarado dentro del orden de CASCADA, de arriba hacia abajo.</span><br/>
+                            <dd class="list-def__extracto list-def__extracto--text-golden"><span>Funciona similar a :first-of-type, pero en vez de seleccionar los primeros, seleccionará a los últimos.</span><br/><span>last-of-type cuenta a todos los selectores que sean del mismo tipo, que estén declarados en todo el documento CSS, sin importar la jerarquía, o sea sin importar que algunos estén en la posición de padres, otros en hijos, abuelos, o en cualquier otro espacio; lo que importa es el nivel en el que es declarado dentro del orden de CASCADA, de arriba hacia abajo.</span><br/>
                                 <div class="ejm-img">
                                     <span class="ejm-img__title">Ejemplo:</span>
                                     <figure class="ejm-img__contenido">
@@ -86,13 +86,77 @@
                             </dd>
                         </dl>
                         <dl class="list-def list-def--background-navyblue list-def--border-gold list-def--border-double"> <!-- bloque -->
-                            <dt class="list-def__title list-def__title--background-golden list-def__title--text-blue">:nth-child(#)</dt>
-                            <dd class="list-def__extracto list-def__extracto--text-golden"><span>nth-child (#) - Seleccionará el # hijo, contando todos los hijos, así no tengan el mismo selector. Tienen que ser la misma línea jerárquica de hermanos. El numero de hermano, puesto, tiene que coincidir con el selector declarado, si no tiene el mismo selector, no sucede nada.</span><br/>
+                            <dt class="list-def__title list-def__title--background-golden list-def__title--text-blue">:nth-child(n)</dt>
+                            <dd class="list-def__extracto list-def__extracto--text-golden"><span>nth-child (#) - Seleccionará por (número) de hermano, y contará a todos los hermanos de la línea jerárquica de hermanos; sin importar que no sean del mismo tipo de selector, siguen siendo hermanos porque están en el mismo nivel jerárquico de hermanos en el DOM. Tienen que ser la misma línea jerárquica de hermanos. El numero de hermano, o puesto, tiene que coincidir con el selector declarado, si no tiene el mismo selector, no se aplicará ningún estilo a ningún elemento.</span><br/><span>Dato extra: :nth-child(1) equivale a :first-child.</span>
                                 <div class="ejm-img">
                                     <span class="ejm-img__title">Ejemplo:</span>
                                     <figure class="ejm-img__contenido">
-                                        <img class="ejm-img__img" src="./images/" alt="Ejemplo de #." />
-                                        <figcaption class="ejm-img__pie-texto">Fuente: <a class="ejm-img__pie-link ejm-img__pie-link--gold" href="https://losapuntesdemajo.vercel.app/" target="_blank">losapuntesdemajo - CSS (Intermedio)</a></figcaption>
+                                        <img class="ejm-img__img" src="./images/nth-child.jpg" alt="Ejemplo de :nth-child(n)." />
+                                        <figcaption class="ejm-img__pie-texto">Fuente: <a class="ejm-img__pie-link ejm-img__pie-link--gold" href="https://www.facebook.com/ITSE2021/photos/a.211408140693384/424475586053304/" target="_blank">Instituto Tecnológico de Santiago del Estero - ITSE</a></figcaption>
+                                    </figure>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="list-def list-def--background-navyblue list-def--border-gold list-def--border-double"> <!-- bloque -->
+                            <dt class="list-def__title list-def__title--background-golden list-def__title--text-blue">:nth-child(n+b)</dt>
+                            <dd class="list-def__extracto list-def__extracto--text-golden"><span>nth-child(n+b) - Seleccionará todos los elementos a partir de la posición que ordena la segunda variable, o variable "b".</span>
+                                <div class="ejm-img">
+                                    <span class="ejm-img__title">Ejemplo:</span>
+                                    <figure class="ejm-img__contenido">
+                                        <img class="ejm-img__img" src="./images/nth-child-n+b.jpg" alt="Ejemplo de :nth-child(n+b)." />
+                                        <figcaption class="ejm-img__pie-texto">Fuente: <a class="ejm-img__pie-link ejm-img__pie-link--gold" href="https://www.facebook.com/ITSE2021/photos/a.211408140693384/424475586053304/" target="_blank">Instituto Tecnológico de Santiago del Estero - ITSE</a></figcaption>
+                                    </figure>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="list-def list-def--background-navyblue list-def--border-gold list-def--border-double"> <!-- bloque -->
+                            <dt class="list-def__title list-def__title--background-golden list-def__title--text-blue">:nth-child(-n+b)</dt>
+                            <dd class="list-def__extracto list-def__extracto--text-golden"><span>nth-child(-n+b) - Selecciona todos los elementos, hacia atrás, a partir de la posición que ordena la variable "b".</span>
+                                <div class="ejm-img">
+                                    <span class="ejm-img__title">Ejemplo:</span>
+                                    <figure class="ejm-img__contenido">
+                                        <img class="ejm-img__img" src="./images/nth-child--n+b.jpg" alt="Ejemplo de :nth-child(-n+b)." />
+                                        <figcaption class="ejm-img__pie-texto">Fuente: <a class="ejm-img__pie-link ejm-img__pie-link--gold" href="https://www.facebook.com/ITSE2021/photos/a.211408140693384/424475586053304/" target="_blank">Instituto Tecnológico de Santiago del Estero - ITSE</a></figcaption>
+                                    </figure>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="list-def list-def--background-navyblue list-def--border-gold list-def--border-double"> <!-- bloque -->
+                            <dt class="list-def__title list-def__title--background-golden list-def__title--text-blue">:nth-child(an+b)</dt>
+                            <dd class="list-def__extracto list-def__extracto--text-golden"><span>nth-child(an+b) - Nos permite seleccionar elementos, realizando una operación en base a ciclos, donde a es el ciclo, n es el contador, empezando desde 0, y b es el valor offset, es decir, variable que ordena la posición desde donde se empezará a contar.</span>
+                                <div class="ejm-img">
+                                    <span class="ejm-img__title">Ejemplo:</span>
+                                    <figure class="ejm-img__contenido">
+                                        <img class="ejm-img__img" src="./images/nth-child-an+b.jpg" alt="Ejemplo de :nth-child(an+b)." />
+                                        <figcaption class="ejm-img__pie-texto"><span>En este ejemplo, se cuenta desde la segunda posición que nos otorga la variable "b", teniendo un ciclo de tres espacios que nos otorga el valor de la variable "a", contando después del espacio en donde nos encontramos, y el ciclo volverá a iterar hasta que ya no hayan elementos a quien seleccionar.</span><br/><span>Fuente: </span><a class="ejm-img__pie-link ejm-img__pie-link--gold" href="https://www.facebook.com/ITSE2021/photos/a.211408140693384/424475586053304/" target="_blank">Instituto Tecnológico de Santiago del Estero - ITSE</a></figcaption>
+                                    </figure><br/>
+                                    <figure class="ejm-img__contenido">
+                                        <img class="ejm-img__img" src="./images/nth-child-an+b(2).jpg" alt="Ejemplo de :nth-child(an+b)." />
+                                        <figcaption class="ejm-img__pie-texto"><span>Fuente: </span><a class="ejm-img__pie-link ejm-img__pie-link--gold" href="https://losapuntesdemajo.vercel.app/" target="_blank">losapuntesdemajo - CSS (Intermedio)</a></figcaption>
+                                    </figure>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="list-def list-def--background-navyblue list-def--border-gold list-def--border-double"> <!-- bloque -->
+                            <dt class="list-def__title list-def__title--background-golden list-def__title--text-blue">:nth-child(even)</dt>
+                            <dd class="list-def__extracto list-def__extracto--text-golden"><span>nth-child(even) - Nos permite seleccionar elementos pares.</span>
+                                <div class="ejm-img">
+                                    <span class="ejm-img__title">Ejemplo:</span>
+                                    <figure class="ejm-img__contenido">
+                                        <img class="ejm-img__img" src="./images/nth-child-even.jpg" alt="Ejemplo de :nth-child(even)." />
+                                        <figcaption class="ejm-img__pie-texto"><span>Fuente: </span><a class="ejm-img__pie-link ejm-img__pie-link--gold" href="https://www.facebook.com/ITSE2021/photos/a.211408140693384/424475586053304/" target="_blank">Instituto Tecnológico de Santiago del Estero - ITSE</a></figcaption>
+                                    </figure>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="list-def list-def--background-navyblue list-def--border-gold list-def--border-double"> <!-- bloque -->
+                            <dt class="list-def__title list-def__title--background-golden list-def__title--text-blue">:nth-child(odd)</dt>
+                            <dd class="list-def__extracto list-def__extracto--text-golden"><span>nth-child(an+b) - Nos permite seleccionar elementos impares.</span>
+                                <div class="ejm-img">
+                                    <span class="ejm-img__title">Ejemplo:</span>
+                                    <figure class="ejm-img__contenido">
+                                        <img class="ejm-img__img" src="./images/nth-child-odd.jpg" alt="Ejemplo de :nth-child(odd)." />
+                                        <figcaption class="ejm-img__pie-texto"><span>Fuente: </span><a class="ejm-img__pie-link ejm-img__pie-link--gold" href="https://www.facebook.com/ITSE2021/photos/a.211408140693384/424475586053304/" target="_blank">Instituto Tecnológico de Santiago del Estero - ITSE</a></figcaption>
                                     </figure>
                                 </div>
                             </dd>
@@ -111,7 +175,7 @@
                         </dl>
                         <dl class="list-def list-def--background-navyblue list-def--border-gold list-def--border-double"> <!-- bloque -->
                             <dt class="list-def__title list-def__title--background-golden list-def__title--text-blue">:nth-of-type</dt>
-                            <dd class="list-def__extracto list-def__extracto--text-golden"><span>La jerarquia es muy importante cuando se trata de crear nuevas Reglas CSS, usando las pseudo-classes: first-child, last-child y nth-child(n); porque para que el estilo sea aplicado, el elemento que se intenta llamar, tiene que cumplir con las siguientes reglas: que cumpla la posición indicada en orden de CASCADA, quiere decir que, si la pseudo-classe es :first-child, el elemento a estilizar, tiene que ser el primer hijo declarado dentro de esa línea jerárquica de hermanos y obligatoriamente tiene que cumlpir con el mismo selector declarado, de lo contrario, si ese elemento no tiene el mismo selector, no se aplicarán estilos a ningún selector, porque se respeta la línea jerárquica, luego se revisa si tiene el mismo selector; y cuando la pseudo-classe es :last-child, sucede algo similar, pero en vez de ser el primer hijo será el último hijo, y también se estarán respetando todas las reglas anteriores, que son: jerarquía, que cumpla la posición en el orden de Cascada, y que tenga el mismo selector.</span><br/><span>Cuando solo existe un solo elemento HIJO, que no tenga hermanos dentro de su linea jerárquica de hermanos, ambas pseudo-classes, tanto como first-child y last-child, funcionan para aplicar estilo en el elemento, porque ese único elemento seconsidera primero y último en su línea jerárquica, no se compara con nadie.</span><!-- La jerarquia es muy importante cuando se trata de crear nuevas Reglas CSS, usando las pseudo-classes: first-child, last-child y nth-child(n); porque para que el estilo sea aplicado, el elemento que se intenta llamar, tiene que cumplir con las siguientes reglas: que cumpla la posición indicada en orden de CASCADA, quiere decir que, si la pseudo-classe es :first-child, el elemento a estilizar tiene que ser el primer hijo declarado dentro de esa linea jerárquica de hermanos y obligatoriamente tiene que cumlpir con el mismo selector declarado, de lo contrario, si ese elemento no tiene el mismo selector, no se aplicarán estilos a ningún selector, porque se respeta la línea jerárquica, luego se revisa si tiene el mismo selector; y cuando la pseudo-classe es :last-child, sucede algo similar, pero en vez de ser el primer hijo será el último hijo, y también se estarán respetando todas las reglas anteriores, que son: jerarquía, que cumpla la posición en el orden de Cascada, y que tenga el mismo selector. -->
+                            <dd class="list-def__extracto list-def__extracto--text-golden"><span>La jerarquia es muy importante cuando se trata de crear nuevas Reglas CSS, usando las pseudo-classes: first-child, last-child y nth-child(n); porque para que el estilo sea aplicado, el elemento que se intenta llamar, tiene que cumplir con las siguientes reglas: que cumpla la posición indicada en orden de CASCADA, quiere decir que, si la pseudo-classe es :first-child, el elemento a estilizar, tiene que ser el primer hijo declarado dentro de esa línea jerárquica de hermanos y obligatoriamente tiene que cumlpir con el mismo selector declarado, de lo contrario, si ese elemento no tiene el mismo selector, no se aplicarán estilos a ningún selector, porque se respeta la línea jerárquica, luego se revisa si tiene el mismo selector; y cuando la pseudo-classe es :last-child, sucede algo similar, pero en vez de ser el primer hijo será el último hijo, y también se estarán respetando todas las reglas anteriores, que son: jerarquía, que cumpla la posición en el orden de Cascada, y que tenga el mismo selector.</span><br/><span>Cuando solo existe un solo elemento HIJO, que no tenga hermanos dentro de su linea jerárquica de hermanos, ambas pseudo-classes, tanto como first-child y last-child, funcionan para aplicar estilo en el elemento, porque ese único elemento seconsidera primero y último en su línea jerárquica, no se compara con nadie.</span><br/><span>Lo mismo pasa con las pseudo-classes "first-of-type" y "last-of-type"; si hay ReglasCSS que son los únicos hijos de su tipo (con un propio selector), dentro de su linea jerárquica de hermanos, ambas pseudo-classes funcionan para aplicar el estilo, porque es el primer y último hijo a la vez.</span><!-- La jerarquia es muy importante cuando se trata de crear nuevas Reglas CSS, usando las pseudo-classes: first-child, last-child y nth-child(n); porque para que el estilo sea aplicado, el elemento que se intenta llamar, tiene que cumplir con las siguientes reglas: que cumpla la posición indicada en orden de CASCADA, quiere decir que, si la pseudo-classe es :first-child, el elemento a estilizar tiene que ser el primer hijo declarado dentro de esa linea jerárquica de hermanos y obligatoriamente tiene que cumlpir con el mismo selector declarado, de lo contrario, si ese elemento no tiene el mismo selector, no se aplicarán estilos a ningún selector, porque se respeta la línea jerárquica, luego se revisa si tiene el mismo selector; y cuando la pseudo-classe es :last-child, sucede algo similar, pero en vez de ser el primer hijo será el último hijo, y también se estarán respetando todas las reglas anteriores, que son: jerarquía, que cumpla la posición en el orden de Cascada, y que tenga el mismo selector. -->
                                 <div class="ejm-img">
                                     <span class="ejm-img__title">Ejemplo:</span>
                                     <figure class="ejm-img__contenido">
@@ -141,15 +205,18 @@
                         <div class="bax"></div>
                         <p>asdad</p>
                         <div>
-                            <div class="box"><p>bbb</p></div>
+                            <div class="box">
+                                <p>bbb</p>
+                            </div>
                             <div class="box"></div>
                             <div class="box"></div>
                             <div class="box"></div>
+                        </div>
                         <div>
                             <div class="box"></div>
                             <div class="box"></div>
                             <div class="abc">
-                                <div class="box"></div>
+                                <div class="box"></div> <!-- Lo mismo pasa con las pseudo-classes first-of-type y last-of-type; si hay ReglasCSS que son los únicos hijos de su tipo (con un propio selector), dentro de su linea jerárquica de hermanos, ambas pseudo-classes funcionan para aplicar el estilo, porque es el primer y último hijo a la vez. -->
                             </div>
                         </div>
                         <div class="box"></div>
